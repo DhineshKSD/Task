@@ -86,78 +86,6 @@ label{
     top:50%;
     transform:translateY(-1.5em);
 }
-.aboutme
-{
-    position: relative;
-    top:8%;
-    left:20%;
-    bottom:25%;
-    right:25%;
-    padding: 1em;
-    background-color: burlywood;
-    width:60%;
-    height:70%;
-    opacity: 0.6;    
-    border-radius: 0.9375em;
-}
-.aboutme h1
-{
-    font-family:Verdana;
-    font-size: 1.5em;
-    text-align: center;
-    color: saddlebrown;
-    position: relative;
-    
-}
-#a{
-    font-family: arial;
-    font-size:1em;
-    text-align: center;
-}
-#b{
-    
-    font-family: arial;
-    font-size:1em;
-    text-align: center;
-}
-#c{
-    
-    font-family: arial;
-    font-size:1em;
-    text-align: center;
-}
-#d{
-    
-    font-family: arial;
-    font-size:1em;
-    text-align: justify;
-}
-
-.academics
-{
-    position: relative;
-    top:8%;
-    left:20%;
-    bottom:25%;
-    right:25%;
-    padding: 1em;
-    background-color: burlywood;
-    width:60%;
-    height:70%;
-    opacity: 0.6;    
-    border-radius: 0.9375em;
-}
-.academics h1
-{
-    font-family:Verdana;
-    font-size: 1.25em;
-    text-align: center;
-    color: saddlebrown;
-    position: relative;
-    top:0;
-}
-
-
 @media only screen and (max-width: 57em) {
     label {
         display: block;
@@ -199,36 +127,6 @@ label{
     top:50%;
     transform:translateY(-1.5em);
 }
-.aboutme
-{
-    position: relative;
-    top:8%;
-    left:30%;
-    bottom:30%;
-    right:5%;
-    padding: 1.25em;
-    background-color: burlywood;
-    width:50%;
-    height:65%;
-    opacity: 0.6;
-    border-radius: 0.9375em;
-    font-size: 0.875em;
-}
-.academics
-{
-    position: relative;
-    top:8%;
-    left:30%;
-    bottom:30%;
-    right:5%;
-    padding: 1.25em;
-    background-color: burlywood;
-    width:50%;
-    height:65%;
-    opacity: 0.6;
-    border-radius: 0.9375em;
-    font-size: 0.8125em;
-}
 #toggle:checked + .menu {
         display: block;
     }
@@ -262,34 +160,6 @@ label{
     height:65%;
     opacity: 0.6;
     border-radius:  0.9375em;
-}
-.aboutme
-{
-    position: relative;
-    top:8%;
-    bottom:30%;
-    right:5%;
-    padding:  1.25em;
-    background-color: burlywood;
-    width:50%;
-    height:65%;
-    opacity: 0.6;
-    border-radius: 0.9375em;
-    font-size: 0.8125em;
-}
-.academics
-{
-    position: relative;
-    top:8%;
-    bottom:30%;
-    right:5%;
-    padding:  1.25em;
-    background-color: burlywood;
-    width:50%;
-    height:65%;
-    opacity: 0.6;
-    border-radius: 0.9375em;
-    font-size: 0.6875em;
 }
 .menu a{
     text-decoration: none;
