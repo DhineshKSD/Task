@@ -75,17 +75,37 @@ label{
     height:70%;
     opacity: 1;    
     border-radius: 0.9375em;
-    font-family: Georgia;
     font-size: 0.95em;
 }
 .extracurricular h1
 {
-    font-family:Verdana;
+    font-family:"Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
     text-align: center;
     color: saddlebrown;
     position: relative;
-    top:0;
+    top:0em;
+}
+.extracurricular li{
+    text-align: center;
+    list-style: none;
+    font-family: Georgia;
+}
+.ex{
+    position: relative;
+    top:10%;
+    left:20%;
+    width:30%;
+    height:auto;
+    border-radius: 5%;
+}
+.art{
+    position: relative;
+    top:10%;
+    left:20%;
+    width:30%;
+    height:auto;
+    border-radius: 5%;
 }
 @media only screen and (max-width: 57em) {
     label {
