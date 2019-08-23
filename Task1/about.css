@@ -78,7 +78,7 @@ label{
 }
 .aboutme h1
 {
-    font-family:Verdana;
+    font-family:"Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
     text-align: center;
     color: saddlebrown;
@@ -134,7 +134,7 @@ label{
 .am{
     position: fixed;
     opacity: 1;
-    top:47%;
+    top:52%;
     left:50%;
     width:15%;
     height:auto;
@@ -178,7 +178,7 @@ label{
 .am{
     position: fixed;
     opacity: 1;
-    top:53%;
+    top:54%;
     left:50%;
     width:15%;
     height:auto;
