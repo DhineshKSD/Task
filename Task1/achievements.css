@@ -75,17 +75,25 @@ label{
     height:70%;
     opacity: 1;    
     border-radius: 0.95em;
+    font-family: georgia;
 }
 .achievements h1
 {
-    font-family:Verdana;
+    font-family:"Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
     text-align: center;
     color: saddlebrown;
     position: relative;
     top:0;
 }
-
+.ac{
+    position: relative;
+    top:0;
+    left:40%;
+    width:20%;
+    height:auto;
+    border-radius: 5%;
+}
 @media only screen and (max-width: 57em) {
     label {
         display: block;
