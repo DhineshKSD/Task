@@ -73,8 +73,10 @@ label{
     background-color: burlywood;
     width:60%;
     height:70%;
-    opacity: 0.6;    
+    opacity: 1;    
     border-radius: 0.9375em;
+    font-family: Georgia;
+    font-size: 0.95em;
 }
 .extracurricular h1
 {
@@ -113,9 +115,9 @@ label{
     background-color: burlywood;
     width:50%;
     height:65%;
-    opacity: 0.6;
+    opacity: 1;
     border-radius: 0.9375em;
-    font-size: 0.8125em;
+    font-size: 0.85em;
 }
 #toggle:checked + .menu {
         display: block;
@@ -148,9 +150,9 @@ label{
     background-color: burlywood;
     width:50%;
     height:65%;
-    opacity: 0.6;
+    opacity: 1;
     border-radius: 0.9375em;
-    font-size: 0.6875em;
+    font-size: 0.75em;
 }
 .menu a{
     text-decoration: none;
