@@ -62,30 +62,20 @@ label{
    background-color: olive;
    color: black; 
 }
-#a{
-    font-family: serif;
-    font-size:1em;
-    text-align: center;
-}
-#b{
+.academics ul{
     
-    font-family: serif;
+    font-family: Georgia;
     font-size:1em;
-    text-align: center;
+    text-align: left;
 }
-#c{
-    
-    font-family: serif;
-    font-size:1em;
-    text-align: center;
+.ac{
+    position: fixed;
+    top:60%;
+    left:46%;
+    width:10%;
+    height:auto;
+    border-radius: 50%;
 }
-#d{
-    
-    font-family: serif;
-    font-size:1em;
-    text-align: justify;
-}
-
 .academics
 {
     position: relative;
@@ -97,8 +87,9 @@ label{
     background-color: burlywood;
     width:60%;
     height:70%;
-    opacity: 0.6;    
+    opacity: 1;    
     border-radius: 0.9375em;
+    font-size: 0.95em;
 }
 .academics h1
 {
@@ -138,9 +129,17 @@ label{
     background-color: burlywood;
     width:50%;
     height:65%;
-    opacity: 0.6;
+    opacity: 1;
     border-radius: 0.9375em;
-    font-size: 0.8125em;
+    font-size: 0.85em;
+}
+.ac{
+    position: fixed;
+    top:65%;
+    left:52%;
+    width:10%;
+    height:auto;
+    border-radius: 50%;
 }
 #toggle:checked + .menu {
         display: block;
@@ -173,9 +172,16 @@ label{
     background-color: burlywood;
     width:50%;
     height:65%;
-    opacity: 0.6;
+    opacity: 1;
     border-radius: 0.9375em;
-    font-size: 0.6875em;
+    font-size: 0.75em;
+}
+.ac{
+    position: fixed;
+    top:75%;
+    left:53%;
+    width:10%;
+    height:auto;
 }
 .menu a{
     text-decoration: none;
