@@ -73,8 +73,8 @@ label{
     background-color: burlywood;
     width:60%;
     height:70%;
-    opacity: 0.6;    
-    border-radius: 0.9375em;
+    opacity: 1;    
+    border-radius: 0.95em;
 }
 .aboutme h1
 {
@@ -86,27 +86,18 @@ label{
     
 }
 #a{
-    font-family: serif;
+    font-family: Georgia;
     font-size:1em;
     text-align: center;
 }
-#b{
-    
-    font-family: serif;
-    font-size:1em;
-    text-align: center;
-}
-#c{
-    
-    font-family: serif;
-    font-size:1em;
-    text-align: center;
-}
-#d{
-    
-    font-family: serif;
-    font-size:1em;
-    text-align: justify;
+
+.am{
+    position: fixed;
+    top:50%;
+    left:44%;
+    width:15%;
+    height:auto;
+    border-radius: 50%;
 }
 @media only screen and (max-width: 57em) {
     label {
@@ -136,9 +127,18 @@ label{
     background-color: burlywood;
     width:50%;
     height:65%;
-    opacity: 0.6;
+    opacity: 1;
     border-radius: 0.9375em;
-    font-size: 0.875em;
+    font-size: 0.85em;
+}
+.am{
+    position: fixed;
+    opacity: 1;
+    top:47%;
+    left:50%;
+    width:15%;
+    height:auto;
+    border-radius: 50%;
 }
 #toggle:checked + .menu {
         display: block;
@@ -171,9 +171,18 @@ label{
     background-color: burlywood;
     width:50%;
     height:65%;
-    opacity: 0.6;
+    opacity: 1;
     border-radius: 0.9375em;
-    font-size: 0.6875em;
+    font-size: 0.75em;
+}
+.am{
+    position: fixed;
+    opacity: 1;
+    top:53%;
+    left:50%;
+    width:15%;
+    height:auto;
+    border-radius: 50%;
 }
 .menu a{
     text-decoration: none;
