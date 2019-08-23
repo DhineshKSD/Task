@@ -4,6 +4,10 @@
                 <link href="gallery.css" rel="stylesheet" type="text/css">
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+                <script
+                src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                crossorigin="anonymous"></script>
         </head>
 
         <body>
@@ -24,10 +28,29 @@
                         
                         </div>              
                 </div>    
-                <div class="message">
-                        
-                        <h1>Welcome</h1>
+        
+
+                <div class="picHolder">
+                                <h1>Photos</h1>
+                        <img src="8.jpg">       
+                        <img src="9.jpg">
+                        <img src="10.jpg">
                 </div>
+                <script>
+                $(function() {
+                var picsLength = $(".picHolder").children('img');
+                if (picsLength.length > 1) {
+                setInterval( function() {
+                var active = $(".picHolder img.active");
+                var next = active.next().length ? active.next() : $(".picHolder img:first");
+                active.addClass('last-active');
+                next.css( { opacity: 0.0} ).addClass('active').animate( { opacity : 1.0}, 1000, function() {
+                active.removeClass('active last-active');
+                   } );
+                }, 3000);
+                }
+                });
+                </script>
                 
         </body>
 </html>
