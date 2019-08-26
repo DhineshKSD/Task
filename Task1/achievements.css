@@ -121,10 +121,6 @@ label{
         cursor: pointer;
     }
     .menu {
-        text-align: center;
-        color: white;
-        width:20%;
-        display: none;
         margin-top: 0.5em;
     }
     .menu a {
@@ -142,19 +138,12 @@ label{
         font-weight: bold;
     }
     .menu a{
-        text-decoration: none;
-        color: white;
-        line-height: 4.375em;
         font-size: 0.6em;
         font-family: sans-serif;
         font-weight:bold;
-        transition: 0.3s;
     }
     .nav{
-        border-bottom: 0.15em solid white;
-        text-align: right;
         height: 4.375em;
-        color: aliceblue;
         line-height: 3.125em;
     }
         #toggle:checked + .menu {
