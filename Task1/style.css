@@ -22,11 +22,9 @@ body{
     color: aliceblue;
     line-height: 4em;
 }
-
 .menu{
     margin: 0 2em 0 0;  
 }
-
 .menu a{
     text-decoration:none;
     color: white;
@@ -46,7 +44,6 @@ label{
 #toggle {
     display: none;
 }
-
 .menu a:hover
 {
    background-color:olive;
@@ -104,7 +101,7 @@ label{
      
     }
     .message
-{
+    {
     position: relative;
     top:8%;
     left:30%;
@@ -116,20 +113,20 @@ label{
     height:65%;
     opacity: 0.6;
     border-radius: 0.9375em;
-}
-.message h1
-{
-    font-family:Verdana;
-    font-size: 1.5625em;
-    text-align: center;
-    color: saddlebrown;
-    position: relative;
-    top:50%;
-    transform:translateY(-1.5em);
-}
-#toggle:checked + .menu {
-        display: block;
+   }
+    .message h1
+    {
+        font-family:Verdana;
+        font-size: 1.5625em;
+        text-align: center;
+        color: saddlebrown;
+        position: relative;
+        top:50%;
+        transform:translateY(-1.5em);
     }
+    #toggle:checked + .menu {
+            display: block;
+        }
 }
 @media only screen and (max-width: 42em) {
     label {
