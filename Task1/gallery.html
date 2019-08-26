@@ -29,27 +29,27 @@
                         </div>              
                 </div>    
         
-
-                <div class="picHolder">
-                                <h1>Photos</h1>
-                        <img src="8.jpg">       
-                        <img src="9.jpg">
-                        <img src="10.jpg">
+               <div class="image">
+                        <h1>Photos</h1>
+                <div id="slideshow">
+                        <div>
+                          <img src="8.jpg">
+                        </div>
+                        <div>
+                          <img src="9.jpg">
+                        </div>
+                     </div>
                 </div>
                 <script>
-                $(function() {
-                var picsLength = $(".picHolder").children('img');
-                if (picsLength.length > 1) {
-                setInterval( function() {
-                var active = $(".picHolder img.active");
-                var next = active.next().length ? active.next() : $(".picHolder img:first");
-                active.addClass('last-active');
-                next.css( { opacity: 0.0} ).addClass('active').animate( { opacity : 1.0}, 1000, function() {
-                active.removeClass('active last-active');
-                   } );
-                }, 3000);
-                }
-                });
+                $("#slideshow > div:gt(0)").hide();
+                setInterval(function() { 
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+                },  3000);
                 </script>
                 
         </body>
