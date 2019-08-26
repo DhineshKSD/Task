@@ -137,10 +137,6 @@ label{
         cursor: pointer;
     }
     .menu {
-        text-align: center;
-        color: white;
-        width:20%;
-        display: none;
         margin-top: 0.5em;
     }
     .menu a {
@@ -148,13 +144,9 @@ label{
         margin: 0;
     }
     .menu a{
-        text-decoration: none;
-        color: white;
-        line-height: 4.375em;
         font-size: 0.6em;
         font-family: sans-serif;
-        font-weight:bold;
-        transition: 0.3s;   
+        font-weight:bold;  
     }
     .nav{
         border-bottom: 0.15em solid white;
