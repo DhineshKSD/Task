@@ -1,61 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Merienda&display=swap");
-body{
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Resources/2.jpg);
-    width:100%;
-    height:100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 .logo{
     position: fixed;
-    top:10;
-    left:10;
-    width:3.125em;
-    height: 3.125em;
-}
-.nav{
-    border-bottom: 0.15em solid white;
-    text-align: right;
-    height: 4em;
-    color: aliceblue;
-    line-height: 4em;
-}
-.menu{
-    margin: 0 2em 0 0;  
-}
-.menu a{
-    text-decoration:none;
-    color: white;
-    margin:0 1em;
-    line-height: 4.375em;
-    font-size: 0.9375em;
-    font-family: Verdana;
-    font-weight:bold;
-    transition: 0.3s;
-}
-label{
-    margin: 0 2.5em 0 0;
-    font-size:0.9375em;
-    line-height: 4.375em;
-    display: none;
-}
-#toggle {
-    display: none;
-}
-.menu a:hover{
-   background-color:olive;
-   color: black;  
-}
-.menu a#onlink{
-   background-color: olive;
-   color: black; 
-}
-.menu a#onlink:hover{
-   background-color: olive;
-   color: black; 
+    top:7px;
+    left:8px;
+    width:50px;
+    height: 50px;
 }
 .achievements{
     position: relative;
@@ -73,7 +22,7 @@ label{
     font-family:"Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
     text-align: center;
-    color: saddlebrown;
+    color:saddlebrown;
     position: relative;
     top:0;
 }
@@ -85,22 +34,11 @@ label{
     height:auto;
     border-radius: 5%;
 }
+ul{
+    font-size: 1.3em;
+    color:black;
+}
 @media only screen and (max-width: 57em) {
-    label {
-        display: block;
-        cursor: pointer;
-    }
-    .menu {
-        text-align: center;
-        color: white;
-        width:20%;
-        display: none;
-        margin-top: 0.1em;
-    }
-    .menu a {
-        display: block;
-        margin: 0em;
-    }
     .achievements
     {
         position: relative;
@@ -111,22 +49,11 @@ label{
         height:65%;
         font-size: 0.85em;
     }
-    #toggle:checked + .menu {
-            display: block;
+    ul{
+        font-size: 1.2em;
     }
 }
 @media only screen and (max-width: 42em) {
-    label {
-        display: block;
-        cursor: pointer;
-    }
-    .menu {
-        margin-top: 0.5em;
-    }
-    .menu a {
-        display: block;
-        margin: 0;
-    }
     .achievements{
         position: relative;
         right:5%;
@@ -137,16 +64,7 @@ label{
         font-size: 0.7em;
         font-weight: bold;
     }
-    .menu a{
-        font-size: 0.6em;
-        font-family: sans-serif;
-        font-weight:bold;
+    ul{
+        font-size: 1.1em;
     }
-    .nav{
-        height: 4.375em;
-        line-height: 3.125em;
-    }
-        #toggle:checked + .menu {
-            display: block;
-        }
 }
