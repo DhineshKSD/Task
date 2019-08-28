@@ -6,4 +6,4 @@ $("#slideshow > div:gt(0)").hide();
                 .fadeIn(1000)
                 .end()
                 .appendTo('#slideshow');
-                },  1500);
+                },  1000);
