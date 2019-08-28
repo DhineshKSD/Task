@@ -52,35 +52,35 @@ ul{
 @media only screen and (max-width: 57em) {
     .extracurricular
     {
-        position: relative;
-        top:8%;
-        left:30%;
-        padding: 1.25em;
-        background-color: burlywood;
-        width:50%;
-        height:65%;
-        font-size: 0.85em;
+    position: relative;
+    top:8%;
+    left:30%;
+    padding: 1.25em;
+    background-color: burlywood;
+    width:50%;
+    height:65%;
+    font-size: 0.85em;
     }
     .ex,.art{
-        width:40%;
-        left:10%;
+    width:40%;
+    left:10%;
     }
     ul{ 
-        font-size: 1.2em;
+    font-size: 1.2em;
     }
 }
 @media only screen and (max-width: 42em) {
     .extracurricular
     {
-        position: relative;
-        right:5%;
-        padding:  1.25em;
-        background-color: burlywood;
-        width:50%;
-        height:65%;
-        font-size: 0.75em;
+    position: relative;
+    right:5%;
+    padding:  1.25em;
+    background-color: burlywood;
+    width:50%;
+    height:65%;
+    font-size: 0.75em;
     }
     ul{ 
-        font-size: 1.1em;
+    font-size: 1.1em;
     }
 }
