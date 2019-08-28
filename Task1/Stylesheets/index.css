@@ -9,12 +9,12 @@
 {
     position: relative;
     top:8%;
-    left:20%;
+    left:19%;
     padding: 1em;
     background-color: burlywood;
     width:60%;
     height:70%;
-    opacity: 0.6;    
+    opacity: 0.5;    
     border-radius: 0.9375em;
 }
 .message h1
