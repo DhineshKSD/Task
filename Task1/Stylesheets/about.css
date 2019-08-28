@@ -42,28 +42,28 @@
 }
 @media only screen and (max-width: 57em) {
     .aboutme{
-        position: relative;
-        left:30%;
-        padding: 1em;
-        background-color: burlywood;
-        width:50%;
-        height:65%;
-        font-size: 0.85em;
+    position: relative;
+    left:30%;
+    padding: 1em;
+    background-color: burlywood;
+    width:50%;
+    height:65%;
+    font-size: 0.85em;
     }
     .am{
-        width:30%;
-        left:34%;
+    width:30%;
+    left:34%;
     }
 }
 @media only screen and (max-width: 42em) {
     .aboutme
     {
-        position: relative;
-        bottom:30%;
-        padding:  1em;
-        background-color: burlywood;
-        width:50%;
-        height:65%;
-        font-size: 0.75em;
+    position: relative;
+    bottom:30%;
+    padding:  1em;
+    background-color: burlywood;
+    width:50%;
+    height:65%;
+    font-size: 0.75em;
     }
 }
