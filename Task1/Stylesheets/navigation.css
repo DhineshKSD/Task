@@ -28,7 +28,7 @@ body{
     font-size: 0.9375em;
     font-family: Verdana;
     font-weight:bold;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 label{
     margin: 0 2.5em 0 0;
