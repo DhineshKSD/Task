@@ -40,24 +40,19 @@
     .message h1
    {
     font-size:2.25em;
-    text-align: center;
-    color: saddlebrown;
     position: relative;
-    top:40%;
-    transform:translateY(-1.5em);
    }
 }
 @media only screen and (max-width: 42em) {
     .message
     {
-        position: relative;
-        right:5%;
-        padding: 1.25em;
-        background-color: burlywood;
-        width:50%;
-        height:65%;
-        opacity: 0.6;
-        border-radius:  0.9375em;
+    position: relative;
+    right:5%;
+    padding: 1.25em;
+    background-color: burlywood;
+    width:50%;
+    height:65%;
+    opacity: 0.6;
     }
     .message h1
    {
