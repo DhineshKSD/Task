@@ -98,6 +98,11 @@ function calculate()
     }
 	pp[y]=(pass[y]/total[y])*100;
 	pp[y]=pp[y].toFixed(0);
+	if (confirm('Do you wish to continue?')) {
+		// Save it!
+	} else {
+		display_array();	
+	}
 	cleartext();
 	}
 	function cleartext()
