@@ -30,7 +30,7 @@ function validate()
 	{
 	alert("Please enter a student id");
 	}
-	else if(stud_id<0)
+	else if(stud_id<0||stud_id>1440)
 	{
 	alert("Please enter a valid student id")
 	}
