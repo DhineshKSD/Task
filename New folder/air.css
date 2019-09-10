@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda&display=swap");
+.logo{
+    position: fixed;
+    top:7px;
+    left:8px;
+    width:100px;
+    height: 80px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(fly.jpg);
+    width:100%;
+    height:670px;
+    top:10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+header{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 30px;
+position: relative;
+color: white;
+left:100px;
+top:30px;
+font-weight: bold;
+}
+.form-submit{
+    padding: 40px;
+    max-width: 500px;
+    position: relative;
+    left:28%;
+    top:18%;
+    background-color: rgba(88, 89, 90, 0.7);
+    width:50%;
+    height:50%;
+    font-family:'Merienda', cursive;
+    color: white;
+    border-radius: 20px;
+}
+.search{
+    position: relative;
+    left:40%;
+    top:10%;
+}
+#btn{
+    background: rgb(154, 157, 160);
+    width: 100px;
+    height: 35px;;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+label{
+    width:200px;
+    display: inline-block;
+}
