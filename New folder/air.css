@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Merienda&display=swap");
 .logo{
     position: fixed;
-    top:7px;
-    left:8px;
-    width:100px;
-    height: 80px;
+    top:28px;
+    left:34px;
+    width:70px;
+    height: 70px;
 }
 body{
     margin: 0;
@@ -24,17 +24,24 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 30px;
 position: relative;
 color: white;
-left:100px;
-top:30px;
+left:115px;
+top:42px;
 font-weight: bold;
+}
+h1{
+    position: relative;
+    top:0px;
+    font-size: 1.25em;
+    text-align: center;
 }
 .form-submit{
     padding: 40px;
+    padding-top: 20px;
     max-width: 500px;
     position: relative;
     left:28%;
-    top:18%;
-    background-color: rgba(88, 89, 90, 0.7);
+    top:15%;
+    background-color: rgba(88, 88, 85, 0.7);
     width:50%;
     height:50%;
     font-family:'Merienda', cursive;
@@ -44,7 +51,8 @@ font-weight: bold;
 .search{
     position: relative;
     left:40%;
-    top:10%;
+    top:8%;
+    
 }
 #btn{
     background: rgb(154, 157, 160);
