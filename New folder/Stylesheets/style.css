@@ -1,6 +1,6 @@
 .logo{
     position: fixed;
-    top:28px;
+    top:30px;
     left:34px;
     width:70px;
     height: 70px;
@@ -24,7 +24,7 @@ header{
     position: relative;
     color: white;
     left:115px;
-    top:42px;
+    top:50px;
     font-weight: bold;
     }
 #rgstr_btn
