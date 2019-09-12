@@ -10,19 +10,20 @@
 <body>
     <header>Bon-Voyage</header>
         <a><img alt="Image-not found" class="logo" src="../Resource/a.png"></a> 
-           <form class="form-submit" onsubmit="event.preventDefault();" autocomplete="off">
+           <form class="form-submit" onsubmit="event.preventDefault();"  autocomplete="off">
             <div id="title">
                 <h1>Journey Details</h1>
             </div>
+            <br>
                 <div class="source">
                     <fieldset>
                     <label for="from">Flying-From:</label>
                     <select id="start" onchange="updateSelect(this,'end');" name="indication_type[]">
-                        <option value="" selected="selected">City</option>
-                        <option value="1">Chennai</option>
-                        <option value="2">Trichy</option>
-                        <option value="3">Bangalore</option>
-                        <option value="4">Cochin</option>
+                        <option value=" " selected="selected">City</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Trichy">Trichy</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Cochin">Cochin</option>
                         </select>
                     </fieldset>
                 </div>
@@ -30,18 +31,24 @@
                     <fieldset>
                         <label for="to">Flying-To:</label>
                         <select id="end" name="indication_type[]" onchange="updateSelect(this,'start');">
-                            <option value="" selected="selected">City</option>
-                            <option value="1">Chennai</option>
-                            <option value="2">Trichy</option>
-                            <option value="3">Bangalore</option>
-                            <option value="4">Cochin</option>
+                            <option value=" " selected="selected">City</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Trichy">Trichy</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Cochin">Cochin</option>
                         </select>
                     </fieldset>
                 </div>
                 <div class="trip">
                         <fieldset>
                             <div class="radio-select">
-                                    <div class="ow" >
+                                    <label for="tripselection">Trip-Selection</label>
+                                    <select id="trip" name="trip" onChange="changetextbox();">
+                                            <option value=" " selected="selected">Trip</option>
+                                            <option value="Oneway-Trip">Oneway-Trip</option>
+                                            <option value="Round-Trip">Round-Trip</option>
+                                    </select>
+                                <!--   <div class="ow" >
                                             <label for="oneway">Oneway</label>
                                             <input type="radio" name="trip" id="oneway" value="one-way" onclick="javascript:onewayCheck();" required="required">
                                     </div>
@@ -49,7 +56,8 @@
                                         <label for="round">Round-Trip</label>
                                         <input type="radio" name="trip" id="round" value="round" onclick="javascript:onewayCheck();" required="required">
                                     </div>
-                                </div>
+                                -->    
+                            </div>
                             </div>
                         </fieldset> 
                 </div>
@@ -67,7 +75,7 @@
                 </div>
                 
                 <div class="search">
-                        <button type="submit" id="btn">Search</button>
+                        <button type="submit" id="btn" onclick="validate()">Search</button>
                 </div>
             </form>
 </body>
