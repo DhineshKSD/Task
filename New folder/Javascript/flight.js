@@ -28,94 +28,96 @@ console.log(typeof trip); //object
 console.log(trip);
 */
 
-var s=0;
-var e=0;
+
+var m="<br>";
 var Database;
+var x= new Array();
+var o= new Array();
 
 Database=
 [
     {
-      from: "Chennai", to: "Trichy",
-      flight: [
-        "IndiGo Dept:12.50 PM",
-        "Spicejet Dept: 10.00 AM",
+        from: "Chennai", to: "Trichy",
+        flight: [
+        {flight_details: "Flight Name: IndiGo   ,  Flight No : 6E 253    ,  Dept: 11.55 AM"},
+        {flight_details: "Flight Name: Spicejet  , Flight No : 6E 253    ,  Dept: 11.55 AM"},
       ]
     },
     {
         from: "Chennai", to: "Bangalore",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Chennai", to: "Cochin",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Trichy", to: "Chennai",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Trichy", to: "Bangalore",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Trichy", to: "Cochin",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Bangalore", to: "Chennai",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Bangalore", to: "Trichy",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Bangalore", to: "Cochin",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Cochin", to: "Chennai",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Cochin",to: "Trichy",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM " },
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM " },
         ]
     },
     {
         from: "Cochin", to: "Bangalore",
         flight: [
-          "IndiGo Dept:12.50 PM",
-          "Spicejet Dept: 10.00 AM",
+          {flight_details: "Flight Name: IndiGo , Flight No : 6E 253, Dept: 11.55 AM "},
+          {flight_details: "Flight Name: Spicejet , Flight No : 6E 253, Dept: 11.55 AM "},
         ]
     },
     
@@ -132,28 +134,28 @@ console.log(Database);
 function validate()
 {
  
-    s = document.getElementById("start").value;
-    e = document.getElementById("end").value;
+    var  start_city = document.getElementById("start").value;
+    var  end_city = document.getElementById("end").value;
 
     var g = document.getElementById("start");
-	var strUser = g.options[g.selectedIndex].value;
-	var strUser1 = g.options[g.selectedIndex].text;
+    var strUser = g.options[g.selectedIndex].value;
+    var strUser1 = g.options[g.selectedIndex].text;
 
-	var h = document.getElementById("end");
-	var strUser2 = h.options[h.selectedIndex].value;
+    var h = document.getElementById("end");
+    var strUser2 = h.options[h.selectedIndex].value;
     var strUser3 = h.options[h.selectedIndex].text;
 
     var p = document.getElementById("trip");
-	var strUser4 = p.options[p.selectedIndex].value;
-	var strUser5 = p.options[p.selectedIndex].text;
+   	var strUser4 = p.options[p.selectedIndex].value;
+  	var strUser5 = p.options[p.selectedIndex].text;
 
 
     if(strUser==0 && strUser2==0)
-	{
-	alert("Please Enter Journey Details");
-	}
-	else if(strUser2==0)
-	{
+    {
+    alert("Please Enter Journey Details");
+    }
+    else if(strUser2==0)
+    {
 	alert("Please select Destination city");
     }
     else if(strUser4==0)
@@ -162,17 +164,34 @@ function validate()
     }
     else
     {
-    compare();
+      localStorage.setItem('start', start_city); 
+      localStorage.setItem('end', end_city); 
+      alert("entered");
+      compare();
     }
-
 }
 function compare()
 {
+  var key1 =  localStorage.getItem('start');
+  var key2 = localStorage.getItem('end');
     for(var i=0;i<Database.length;i++)
     {
-        if(s==Database[i].from)
-    {
-    alert("found");
-    }    
+      if(key1==Database[i].from && key2==Database[i].to)
+     {
+       for(var j=0;j<Database[i].flight.length;j++)
+       {
+       x = Database[i].flight[j].flight_details;
+       o += JSON.stringify(x) + "<br><br>" ;    
+       }   
+      localStorage.setItem("output",o);
+      console.log(o);
+      alert("Finding Flights..."); 
+      window.location.assign("../javascript/redirect.html");  
+   }
+  }
 }
+ function display()
+{
+  var disp = localStorage.getItem("output");
+  document.getElementById("Result").innerHTML=disp;
 }
