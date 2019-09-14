@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda&display=swap");
+.logo{
+    position: fixed;
+    top:px;
+    left:34px;
+    width:70px;
+    height: 70px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(90, 119, 109, 0.7);
+    width:100%;
+    height:670px;
+    top:10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    position: relative;
+    color: white;
+    left:115px;
+    top:50px;
+    font-weight: bold;
+    }
+h1{
+    position: relative;
+    top:50px;
+    left:0px;
+    font-size: 1.5;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Result{
+    position: relative;
+    top:50px;
+    left:180px;
+    font-size: 1.2em;
+    font-family: 'Merienda', cursive;
+}
