@@ -31,6 +31,7 @@ console.log(trip);
 var Database;
 var x= new Array();
 var o= new Array();
+var dd=[];
 
 Database=
 [
@@ -204,10 +205,10 @@ function compare()
        for(var j=0;j<Database[i].flight.length;j++)
        {
        x = Database[i].flight[j].flight_details;
-       o +='<input type="radio" value='+JSON.stringify(x)+' name="box2">'  + '   ' + JSON.stringify(x)+'   '+'<br><br>';  
+       o +='<input type="radio" value='+JSON.stringify(x)+' name="box2">'  + '   ' + JSON.stringify(x)+'   '+'<br><br>'; 
        }   
       localStorage.setItem("output",o);
-      console.log(o);
+      console.log(o); 
       alert("Finding Flights..."); 
       window.location.assign("../javascript/redirect.html");  
    }
@@ -215,6 +216,8 @@ function compare()
 }
  function display()
 {
-  var disp = localStorage.getItem("output");
-  document.getElementById("Result").innerHTML=disp;
+  var disp;
+
+    disp  = localStorage.getItem("output");
+    document.getElementById("Result").innerHTML=disp;
 }
