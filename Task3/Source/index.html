@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset=utf-8 />
+                <title>Air Ticketing</title>
+                <link rel="stylesheet" href="../Stylesheets/index.css">
+                <script src="../Javascript/script.js"></script>
+                <script src="../Javascript/flight trial.js"></script>
+        </head>
+<body>
+    <header>Bon-Voyage</header>
+        <a><img alt="Image-not found" class="logo" src="../Resource/logo.png"></a> 
+           <form class="form-submit" onsubmit="event.preventDefault();"  autocomplete="off">
+            <div id="title">
+                <h1>Journey Details</h1>
+            </div>
+            <br>
+                <div class="source">
+                    <fieldset>
+                    <label for="from">Flying-From:</label>
+                    <select id="start" onchange="updateSelect(this,'end');" name="indication_type[]">
+                        <option value=" " selected="selected">City</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Trichy">Trichy</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Cochin">Cochin</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="destination">
+                    <fieldset>
+                        <label for="to">Flying-To:</label>
+                        <select id="end" name="indication_type[]" onchange="updateSelect(this,'start');">
+                            <option value=" " selected="selected">City</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Trichy">Trichy</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Cochin">Cochin</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="trip">
+                        <fieldset>
+                            <div class="radio-select">
+                                    <label for="tripselection">Trip-Selection</label>
+                                    <select id="trip" name="trip" onChange="changetextbox();">
+                                            <option value=" " selected="selected">Trip</option>
+                                            <option value="Oneway-Trip">Oneway-Trip</option>
+                                            <option value="Round-Trip">Round-Trip</option>
+                                    </select>
+                                <!--   <div class="ow" >
+                                            <label for="oneway">Oneway</label>
+                                            <input type="radio" name="trip" id="oneway" value="one-way" onclick="javascript:onewayCheck();" required="required">
+                                    </div>
+                                    <div class="rt">
+                                        <label for="round">Round-Trip</label>
+                                        <input type="radio" name="trip" id="round" value="round" onclick="javascript:onewayCheck();" required="required">
+                                    </div>
+                                -->    
+                            </div>
+                            </div>
+                        </fieldset> 
+                </div>
+                <div class="departdate" id="ifround">
+                    <fieldset>
+                        <label for="departure">Departure date:</label>
+                        <input type="date" name="departure" placeholder="Select date..."id="departure">
+                    </fieldset>
+                </div>
+                <div class="retdate" id="ifoneway">
+                    <fieldset>
+                        <label for="return">Return date:</label>
+                        <input type="date" name="return" placeholder="Select date..."id="return">
+                    </fieldset>
+                </div>
+                
+                <div class="search">
+                        <button type="submit" id="btn" onclick="validate()">Search</button>
+                </div>
+            </form>
+            
+</body>
+</html>
