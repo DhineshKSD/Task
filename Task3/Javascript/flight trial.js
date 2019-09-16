@@ -32,6 +32,7 @@ var Database;
 
 var dd=[];
 
+
 Database=
 [
     {
@@ -215,33 +216,32 @@ function compare()
 }
  function display()
 {
-  var disp = JSON.parse(window.localStorage.getItem("output")) || [];
+   var disp = JSON.parse(window.localStorage.getItem("output")) || [];
   for(i=0;i<disp.length;i++)
   {
     var html=document.getElementById("Result").innerHTML;
-    document.getElementById("Result").innerHTML= html+"<br>"+ '<input type="radio" value='+disp[i]+' name="radios">'+"   "+disp[i]+' '+'<br>';
-    console.log('<input type="radio" value='+disp[i]+' name="radios">'+"   "+disp[i]+" "+'<br>')
+    document.getElementById("Result").innerHTML= html+"<br>"+ "<input type='radio' id='r' value='disp' name='radio[]'>"+disp[i]+' '+'<br>';
+    console.log("<input type='radio' id='r' value='disp' name='radio[]'>"+disp[i]+' '+'<br>');
 }
-html.onclick=check();
 }
-function check()
+function booking()
 {
-    alert("checked");
-    var radio_btn = document.getElementsByName("radios") || [];
-    var found = 1;
-    for(var i=0;i<radio_btn.length;i++){
-        if (radio_btn[i].checked) {
-            alert(radio_btn[i].value);
-            found = 0;
-            break;
+    var flight=new Array(); 
+    flight = document.getElementsByName("radio[]");
+    if (flight[0].checked == true) {
+    alert("You have chosen a flight");
+    console.log(flight[0])
+    }
+    else if (flight[1].checked == true) {
+    alert("You have chosen a flight");
+    }
+    else if (flight[2].checked == true) {
+    alert("You have chosen a flight");
+    }
+    else if (flight[3].checked == true) {
+        alert("You have chosen a flight");
         }
+    else{
+    alert("Choose a flight");
     }
-    if(found == 1) {
-        alert("Please Select Radio");
-    }
-    //event.preventDefault(); // disable normal form submit behavior
-    return false; // prevent further bubbling of event
 }
-
-
-// var o ='<input type="radio" value='+[j]+' name="box2">'  + '   ' + JSON.stringify(x) +'   '+'<br><br>';
