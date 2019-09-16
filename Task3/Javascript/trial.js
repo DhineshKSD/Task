@@ -1,25 +1,41 @@
-var username= [];
-var password= [];
-var urArray= []; var pwarray=[];
+var count=0;
+var user= []; var passwrd=[];
+var id=[];
 flag=true;
 
 function  validate_reg() 
 {
-  
+if((document.getElementById("name").value)=="")
+{
+    alert("please enter username");
+}
+else if(document.getElementById("pw").value=="")
+{
+    alert("please enter password");
+}
+else{  
 if(window.localStorage["username"] !=null)
  
-urArray = JSON.parse(window.localStorage["username"]);
-urArray.push(document.getElementById("name").value);
-window.localStorage["username"] = JSON.stringify(urArray);
+user = JSON.parse(window.localStorage["username"]);
+user.push(document.getElementById("name").value);
+window.localStorage["username"] = JSON.stringify(user);
+
 
 if(window.localStorage["password"] !=null)
 
-pwarray=JSON.parse(window.localStorage["password"]);
-pwarray.push(document.getElementById("pw").value);
-window.localStorage["password"] = JSON.stringify(pwarray);
+passwrd=JSON.parse(window.localStorage["password"]);
+passwrd.push(document.getElementById("pw").value);
+window.localStorage["password"] = JSON.stringify(passwrd);
+
+if(window.localStorage["user_id"] !=null)
+
+id = JSON.parse(window.localStorage["user_id"]);
+var user_c=count+1;
+id.push(user_c);
+window.localStorage["user_id"] = JSON.stringify(id);
 
 alert("Registered Succesffuly");
- 
+}
 }
 
 function validate_log()
