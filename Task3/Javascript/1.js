@@ -84,14 +84,14 @@ function display()
     var html1=document.getElementById("Result").innerHTML;
     var disp = JSON.parse(window.localStorage.getItem("output")) || [];
     console.log(disp);
-    /*for(i=0;i<disp.length;i++)
+   /* for(i=0;i<disp.length;i++)
 	{
     var l="&nbsp &nbsp"+'<input type="radio" value="disp[i]" id="radios" name="disp">'+"      "+disp[i].FlightName+'      '+disp[i].FlightNo+'         '+disp[i].Departure+'           '+disp[i].Arrival+'         '+disp[i].Price+"<br>";
 	o+=l;
 	o+=m;
 	}
-    document.getElementById("container").innerHTML= html1+m+s+d+o+f;*/
-
+    document.getElementById("Result").innerHTML= html1+m+s+d+o+f;*/
+ 
  var html = '<table>';
  html += '<tr>';
  for( var j in disp[0] ) {
@@ -99,6 +99,7 @@ function display()
   }
  html += '</tr>'
   for( var i = 0; i < disp.length; i++) {
+  '<input type="button" value="button">'
   html += '<tr>';
   for( var j in disp[i] ) 
   {
@@ -110,13 +111,13 @@ function display()
   document.getElementById('Result').innerHTML = html1+m+html;
  }
 
-/*function booking()
+function booking()
 {
     var flight=new Array(); 
     flight = document.getElementsByName("disp");
     if (flight[0].checked == true) {
     alert("You have chosen a flight");
-    console.log(flight[0])
+    console.log(flight[0].FlightName)
     }
     else if (flight[1].checked == true) {
     alert("You have chosen a flight");
@@ -125,10 +126,9 @@ function display()
     alert("You have chosen a flight");
     }
     else if (flight[3].checked == true) {
-        alert("You have chosen a flight");
-        }
+    alert("You have chosen a flight");
+    }
     else{
     alert("Choose a flight");
     }
 }
-*/
