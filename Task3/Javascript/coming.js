@@ -21,10 +21,10 @@ Database=
     {
         from: "Chennai", to: "Trichy",
         flight: [
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 7143,  Departure: 04.55 AM,  Arrival: 06:25AM", Price: "Rs.3672"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 02.55 PM, Arrival: 04:25PM", Price: "Rs.3812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 9945 ,  Departure: 01.15 PM, Arrival: 02:25PM", Price: "Rs.4259"},
-        {flight_details: "Flight Name: Air-India , Flight No : AI 591 ,  Departure: 07.20 AM, Arrival: 08:20AM", Price: "Rs.3950"},
+        {flight_details: "Flight Name: IndiGo , Flight No : 6E 7143,  Departure: 04.55 AM,  Arrival: 06:25AM", Price: "3672"},
+        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 02.55 PM, Arrival: 04:25PM", Price: "3812"},
+        {flight_details: "Flight Name: AirAsia , Flight No : I5 9945 ,  Departure: 01.15 PM, Arrival: 02:25PM", Price: "4259"},
+        {flight_details: "Flight Name: Air-India , Flight No : AI 591 ,  Departure: 07.20 AM, Arrival: 08:20AM", Price: "3950"},
       ]
     },
     {
@@ -219,7 +219,7 @@ function compare()
   for(i=0;i<disp.length;i++)
   {
     var html=document.getElementById("Result").innerHTML;
-    document.getElementById("Result").innerHTML= html+"<br>"+ "<input type='radio' id='r' value='disp' name='radio[]'>"+"&nbsp"+disp[i]+' '+"Price: "+ disp1[i]+'<br>';
+    document.getElementById("Result").innerHTML= html+"<br>"+ "<input type='radio' id='r' value='disp' name='radio[]'>"+"&nbsp"+disp[i]+' '+"Price:Rs. "+ disp1[i]+'<br>';
     console.log("<input type='radio' id='r' value='disp' name='radio[]'>"+disp[i]+' '+"Price: "+disp1[i]+'<br>');
 }
 }
@@ -281,7 +281,8 @@ function userchoice()
     document.getElementById("Result1").innerHTML= html2+s+display_choice;*/
      var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
      var l="<br>"
-     var m="Date. of. Journey-"
+     var m="Date. of. Journey -"
+     var n="No. of. Travellers -"
      a1=localStorage.getItem("start");
      a2=localStorage.getItem("end");
      a3=JSON.parse(window.localStorage.getItem("choice"));
@@ -290,9 +291,9 @@ function userchoice()
      a6=JSON.parse(window.localStorage.getItem("choicePrice"));
      console.log(a6);
      html2 = document.getElementById("Result1").innerHTML;
-    table+="<table border ='1'><tr><th>From</th><th>To</th><th>Flight Details</th><th>Travellers.No</th><th>Price</th></tr>";
-    table+="<tr><td>" +a1+ "</td>" +"<td>" + a2+ "</td>" + "<td>"+ a3 +"</td>" + "<td>"+space+ a4 +"</td>"+ "<td>"+ a6 +"</td></tr></table>";
-    document.getElementById("Result1").innerHTML= html2+l+table+l+m+a5;
+    table+="<table border ='1'><tr><th>From</th><th>To</th><th>Flight Details</th><th>Price</th></tr>";
+    table+="<tr><td>" +a1+ "</td>" +"<td>" + a2+ "</td>" + "<td>"+ a3 +"</td>" + "<td>"+"Rs."+ a6 +"</td></tr></table>";
+    document.getElementById("Result1").innerHTML= html2+l+table+l+m+a5+l+n+a4;
 }
 
 function print()
@@ -326,7 +327,7 @@ function ticket()
     
     html3 = document.getElementById("Result2").innerHTML;
     table1+="<table border ='1'><tr><th>Name</th><th>From</th><th>To</th><th>Flight Details</th><th>Travellers.No</th><th>Date.of.Journey</th><th>Price</th></tr>";
-    table1+="<tr><td>" +b6+"</td>"+"<td>"+b1+ "</td>" +"<td>" + b2+ "</td>" + "<td>"+ b3 +"</td>" + "<td>"+space+ b4 +"</td>" + "<td>"+ b5 +"</td>"+ "<td>"+ b4*b7 +"</td></tr></table>";
+    table1+="<tr><td>" +b6+"</td>"+"<td>"+b1+ "</td>" +"<td>" + b2+ "</td>" + "<td>"+ b3 +"</td>" + "<td>"+space+ b4 +"</td>" + "<td>"+ b5 +"</td>"+ "<td>"+"Rs."+ b4*b7 +"</td></tr></table>";
     document.getElementById("Result2").innerHTML= html3+l+table1+l;
 }    
 
