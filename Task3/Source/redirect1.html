@@ -2,14 +2,21 @@
 <html>
     <head>
         <title>Flight Details</title>
-        <link rel="stylesheet" href="../Stylesheets/redirect.css">
-        <script src="../Javascript/flight.js"></script>
+        <link rel="stylesheet" href="../Stylesheets/redirect1.css">
+        <script src="../Javascript/flight trial.js"></script>
     </head> 
-    <body onload="displayRadioValue()">
+    <body onload="userchoice()">
         <header>Bon-Voyage</header>
-        <a><img alt="Image-not found" class="logo" src="../Resource/a.png"></a> 
-        <h1>Flight Details</h1>
+        <a><img alt="Image-not found" class="logo" src="../Resource/logo.png"></a> 
+        
         <br>
-        <div id="Result1" ></div>
+        <div id="Result1" >
+                <h1>Review Flight Details</h1>
+                <br>   
+        </div>
+        <!--<p id="date">Date.of.Journey</p> -->
+        <div class="continue">
+        <input id="continue_btn" type="submit" value="Continue" onclick="print()"/> 
+        </div>
     </body>
 </html>
