@@ -82,19 +82,21 @@ function display()
 	var o="<br>";
     var m="<br>";
     var html1=document.getElementById("Result").innerHTML;
-    var disp = JSON.parse(window.localStorage.getItem("output")) || [];
-    console.log(disp);
-   /* for(i=0;i<disp.length;i++)
+    var disp= [];
+    var disp = JSON.parse(window.localStorage.getItem("output"));
+    console.log(disp[0]);
+    for(i=0;i<disp.length;i++)
 	{
     var l="&nbsp &nbsp"+'<input type="radio" value="disp[i]" id="radios" name="disp">'+"      "+disp[i].FlightName+'      '+disp[i].FlightNo+'         '+disp[i].Departure+'           '+disp[i].Arrival+'         '+disp[i].Price+"<br>";
 	o+=l;
 	o+=m;
 	}
-    document.getElementById("Result").innerHTML= html1+m+s+d+o+f;*/
+    document.getElementById("Result").innerHTML= html1+m+s+d+o+f;
+}
  
- var html = '<table>';
- html += '<tr>';
- for( var j in disp[0] ) {
+  /*var html = '<table>';
+  html += '<tr>';
+  for( var j in disp[0] ) {
   html += '<th>' + j + '</th>';
   }
  html += '</tr>'
@@ -109,7 +111,7 @@ function display()
   }
   html += '</table>';
   document.getElementById('Result').innerHTML = html1+m+html;
- }
+ }*/
 
 function booking()
 {
