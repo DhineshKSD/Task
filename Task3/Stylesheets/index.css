@@ -41,7 +41,7 @@ h1{
     max-width: 500px;
     position: relative;
     left:28%;
-    top:15%;
+    top:12%;
     background-color: rgba(51, 51, 49, 0.7);
     width:50%;
     height:50%;
@@ -52,7 +52,7 @@ h1{
 .search{
     position: relative;
     left:32%;
-    top:18%;   
+    top:6%;   
 }
 #btn{
     background:  #ffc107;
