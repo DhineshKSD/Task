@@ -1,4 +1,4 @@
-var count=0;
+var count=[];
 var user= []; var passwrd=[];
 var id=[];
 flag=true;
