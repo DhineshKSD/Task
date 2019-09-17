@@ -1,6 +1,6 @@
 .logo{
     position: fixed;
-    top:30px;
+    top:40px;
     left:34px;
     width:70px;
     height: 70px;
@@ -8,7 +8,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(../Resource/login.jpg);
+    background: url(../Resource/back3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,6 +26,7 @@ header{
     left:115px;
     top:50px;
     font-weight: bold;
+    font-size: 2.5em;
     }
 #rgstr_btn
 {
@@ -35,7 +36,7 @@ header{
 .loginbox{
     width: 320px;
     height: 370px;
-    background: #000;
+    background: rgb(14, 13, 13);
     opacity: 0.9;
     color: #fff;
     top: 55%;
@@ -49,7 +50,7 @@ header{
 .registerbox{
     width: 320px;
     height: 370px;
-    background: #000;
+    background: rgb(14, 13, 13);
     opacity: 0.9;
     color: #fff;
     top: 55%;
