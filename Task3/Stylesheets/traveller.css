@@ -46,6 +46,7 @@ header{
     font-family:'Merienda', cursive;
     color: white;
     border-radius: 80px 0 80px 0;
+    border: 1px solid whitesmoke;
     }
 #formcontent{
     position: relative;
@@ -89,6 +90,7 @@ label{
     font-family: 'Merienda', cursive;
     color: whitesmoke;
     border-radius: 80px 0 80px 0;
+    border: 1px solid whitesmoke;
 }
 h2{
     font-size: 1.25em;
