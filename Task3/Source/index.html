@@ -10,6 +10,12 @@
 <body>
     <header>Bon-Voyage</header>
         <a><img alt="Image-not found" class="logo" src="../Resource/logo.png"></a> 
+            <div class="tbtn">
+                <a id="trip_button" href="../Source/print.html">My Trip</a>
+            </div>
+            <div class="Logout">
+                <a id="Logoutbtn" href="../Source/login.html">Logout</a>
+            </div>
            <form class="form-submit" onsubmit="event.preventDefault();"  autocomplete="off">
             <div id="title">
                 <h1>Flight Search</h1>
@@ -79,11 +85,11 @@
                         <input type="date" id="day2" placeholder="Select date...">
                     </fieldset>
                 </div>
-               
-                
                 <div class="search">
                         <button type="submit" id="btn" onclick="validate()">Search</button>
                 </div>
+                
+                
             </form>
             
 </body>
