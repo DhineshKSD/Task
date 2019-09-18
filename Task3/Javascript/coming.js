@@ -30,101 +30,102 @@ Database=
     {
         from: "Chennai", to: "Bangalore",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM", Price: "1751"},
+        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45PM", Price: "2149"},
+        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM", Price: "1812"},
+        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40AM", Price: "2459"},
         ]
     },
     {
         from: "Chennai", to: "Cochin",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 513 ,  Departure: 08.25 AM, Arrival: 09:35PM, Price: Rs.2751"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 09.10 PM, Arrival: 10:25PM, Price: Rs.2812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2015 ,  Departure: 12.40 PM, Arrival: 01:55PM, Price: Rs.2859"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 776,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2949"},
+        {flight_details: "Flight Name: Air-India , Flight No : AI 513 ,  Departure: 08.25 AM, Arrival: 09:35PM", Price: "2751"},
+        {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 09.10 PM, Arrival: 10:25PM", Price: "2812"},
+        {flight_details: "Flight Name: AirAsia , Flight No : I5 2015 ,  Departure: 12.40 PM, Arrival: 01:55PM", Price: "2859"},
+        {flight_details: "Flight Name: IndiGo , Flight No : 6E 776,  Departure: 07.40 PM,  Arrival: 08:45PM", Price: "2949"},
         
         ]
     },
     {
         from: "Trichy", to: "Chennai",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+            {flight_details: "Flight Name: IndiGo , Flight No : 6E 7143,  Departure: 06.55 AM,  Arrival: 07:25AM", Price: "3672"},
+            {flight_details: "Flight Name: Air-India , Flight No : AI 591 ,  Departure: 07.30 AM, Arrival: 08:30AM", Price: "3950"},
+            {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 02.55 PM, Arrival: 04:05PM", Price: "3812"},
+            {flight_details: "Flight Name: AirAsia , Flight No : I5 9945 ,  Departure: 01.15 PM, Arrival: 02:25PM", Price: "4259"},
         ]
     },
     {
         from: "Trichy", to: "Bangalore",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM", Price: "1751"},
+        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM", Price: "2149"},
+        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM", Price: "1812"},
+        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM", Price: "2459"},
         ]
     },
     {
         from: "Trichy", to: "Cochin",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM", Price: "1751"},
+        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM", Price: "2149"},
+        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM", Price: "1812"},
+        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM", Price: "2459"},
         ]
     },
     {
         from: "Bangalore", to: "Chennai",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+            {flight_details: "Flight Name: IndiGo , Flight No : 6E 856,  Departure: 07.40 PM,  Arrival: 08:45PM", Price: "2149"},
+            {flight_details: "Flight Name: Air-India , Flight No : AI 5563 ,  Departure: 01.20 PM, Arrival: 02:25PM", Price: "1751"},
+            {flight_details: "Flight Name: Spicejet , Flight No : SG 7335 ,  Departure: 05.00 PM, Arrival: 05:55PM", Price: "1812"},
+            {flight_details: "Flight Name: AirAsia , Flight No : I5 2335 ,  Departure: 08.40 AM, Arrival: 09:40AM", Price: "2459"},
         ]
     },
     {
         from: "Bangalore", to: "Trichy",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM", Price: "1751"},
+        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM", Price: "2149"},
+        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM", Price: "1812"},
+        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM", Price: "2459"},
         ]
     },
     {
         from: "Bangalore", to: "Cochin",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM", Price: "1751"},
+        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM", Price: "2149"},
+        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM", Price: "1812"},
+        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM", Price: "2459"},
         ]
     },
     {
         from: "Cochin", to: "Chennai",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+            {flight_details: "Flight Name: Air-India , Flight No : AI 513 ,  Departure: 09.25 AM, Arrival: 10:35PM", Price: "2751"},
+            {flight_details: "Flight Name: IndiGo , Flight No : 6E 776,  Departure: 09.40 PM,  Arrival: 10:45PM", Price: "2949"},  
+            {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 09.10 PM, Arrival: 10:25PM", Price: "2812"},
+            {flight_details: "Flight Name: AirAsia , Flight No : I5 2015 ,  Departure: 12.50 PM, Arrival: 01:55PM", Price: "2859"},  
         ]
     },
     {
         from: "Cochin",to: "Trichy",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM", Price: "1751"},
+        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM", Price: "2149"},
+        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM", Price: "1812"},
+        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM", Price: "2459"},
         ]
     },
     {
         from: "Cochin", to: "Bangalore",
         flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02:25PM, Price: Rs.1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08:45AM, Price: Rs.2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05:55PM, Price: Rs.1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09:40PM, Price: Rs.2459"},
+        {flight_details: "Flight Name: Air-India , Flight No : AI 5163 ,  Departure: 12.20 PM, Arrival: 01:25PM", Price: "2536"},
+        {flight_details: "Flight Name: IndiGo , Flight No : 6E 836,  Departure: 07.40 PM,  Arrival: 08:45AM", Price: "2149"},
+        {flight_details: "Flight Name: AirAsia , Flight No : I5 2645 ,  Departure: 08.40 AM, Arrival: 09:50AM", Price: "2459"},
+        {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 05.00 PM, Arrival: 05:55PM", Price: "2890"},
+        
         ]
     },
     
