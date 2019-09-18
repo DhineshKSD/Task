@@ -42,7 +42,7 @@ h1{
     max-width: 500px;
     position: relative;
     left:28%;
-    top:12%;
+    top:5%;
     background-color: rgba(12, 12, 12, 0.7);
     width:50%;
     height:50%;
@@ -72,4 +72,53 @@ h1{
 label{
     width:200px;
     display: inline-block;
+}
+.tbtn{
+    position: relative;
+    background:  #ffc107;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 1.2em;
+    width:180px;
+    height: 40px;
+    left:65%;
+    text-align: center;
+}
+#trip_button
+{
+    position: relative;
+    text-decoration: none;
+    top:10px;
+    color: black;
+}
+#trip_button:hover{
+    background: rgb(154, 157, 160);
+    color: #000;
+}
+.Logout{
+    position: relative;
+    background:  #ffc107;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 1.2em;
+    width:180px;
+    height: 40px;
+    left:80%;
+    bottom: 6%;
+    text-align: center;
+}
+#Logoutbtn
+{
+    position: relative;
+    text-decoration: none;
+    top:10px;
+    color: black;
+}
+#Logoutbtn:hover{
+    background: rgb(154, 157, 160);
+    color: #000;
 }
