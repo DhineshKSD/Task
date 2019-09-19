@@ -1,6 +1,8 @@
 var name= new Array();
 var pw = new Array();
 // storing input from register-form
+// Get the modal
+
 function validate_reg()
 {
 name = (document.getElementById('name').value);
