@@ -3,42 +3,59 @@
 <head>
     <title>Welcome to Bon-Voyage</title>
     <link rel="stylesheet" type="text/css" href="../Stylesheets/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 </head> 
 <body>
         <header>Bon-Voyage</header>
         <a><img alt="Image-not found" class="logo" src="../Resource/logo.png"></a> 
-    <div class="registerbox">
-    <img src="../Resource/avatar.png" class="avatar">
-        <h1>Register Here</h1>
-
-        <form id="register-form"  autocomplete="off">
-            <p>Username</p>
-            <input id="name" type="text" placeholder="Enter Username" value=""/>
-            <p>Password</p>
-            <input id="pw" type="password" placeholder="Enter Password" value=""/>
-            <br>
-            <br>
-            <input id="rgstr_btn" type="submit" value="Get Account" onClick="validate_reg()"/> 
-        </form>
-    </div>
+        <div class="registerbox">
+        <img src="../Resource/avatar.png" class="avatar">
+            <h1>Register Here</h1>
+            <form id="register-form"  autocomplete="off">
+                <p>Username</p>
+                <input id="name" type="text" placeholder="Enter Username" value=""/>
+                <p>Password</p>
+                <input id="pw" type="password" placeholder="Enter Password" value=""/>
+                <br>
+                <br>
+                <input id="rgstr_btn" type="submit" value="Get Account" onClick="validate_reg()"/> 
+            </form>
+        </div>
 
         <div class="loginbox">
-                <img src="../Resource/avatar.png" class="avatar">
-                <h2>Login Here</h2>
+            <img src="../Resource/avatar.png" class="avatar">
+            <h2>Login Here</h2>
 
-        <form id="login-form"   autocomplete="off">
-            <p>Username</p>
-            <input id="userName" type="text" placeholder="Enter Username" value=""/>
-            <p>Password</p>
-            <input id="userPw" type="password" placeholder="Enter Password" value=""/>
-            <br>
-            <br>
-            <a class="btn">
-                <p id="log" onClick="validate_log()">Login</p>
-            </a>
-        </form>
+            <form id="login-form"   autocomplete="off">
+                <p>Username</p>
+                <input id="userName" type="text" placeholder="Enter Username" value=""/>
+                <p>Password</p>
+                <input id="userPw" type="password" placeholder="Enter Password" value=""/>
+                <br>
+                <br>
+                <a class="btn">
+                    <p id="log" onClick="validate_log()">Login</p>
+                </a>
+            </form>
         </div>
-    </div>
+        
+        <button id="myBtn">About Us</button>
+        <div id="myModal" class="modal">
+           <div class="modal-content">
+           <span class="close">&times;</span>
+           <p>Bon-Voyage is India's leading player for domestic flight bookings, and have a dominant position in the domestic flights 
+           sector. We offers great offers, some of the lowest airfares, exclusive discounts and a seamless online booking experience With the cheapest fare guarantee, experience 
+           great value at the lowest price. </p>
+           </div>
+        </div>
+        
+        <div id="logocontainer">
+        <a href="https://www.facebook.com/"><img alt="Image-not found" class="fb" src="../Resource/fb.jpg"></a><br>
+        <a href="https://www.google.com/"><img alt="Image-not found" class="google" src="../Resource/google.png"></a>
+        </div>
+        
     <script type="text/javascript" language="javascript" src="../Javascript/trial.js"></script>
+    <script type="text/javascript" language="javascript" src="../Javascript/modal.js"></script>
 </body>
 </html>
