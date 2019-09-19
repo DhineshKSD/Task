@@ -5,16 +5,17 @@ var dd=[];
 var pp=[];
 var choice = []; 
 var choice_Price = [];
-var a1=[];
-var a2=[];
-var a3=[];
-var a4=[];
-var a5=[];
-var a6=[];
 var table="";
 var table1="";
-var  date=[];
-var  traveller=[];
+var date=[];var date1=[];var trip=[];
+var traveller=[];
+var start_city=[];var end_city =[];
+var key1=[];var key2=[];
+var trav_name= [];
+var trav_email= [];
+var trav_num= [];
+var trav_gender= [];
+var a1=[];var a2=[];var a3=[];var a4=[];var a5=[];var a6=[];
 
 Database=
 [
@@ -125,10 +126,8 @@ Database=
         {flight_details: "Flight Name: IndiGo , Flight No : 6E 836,  Departure: 07.40 PM,  Arrival: 08:45AM", Price: "2149"},
         {flight_details: "Flight Name: AirAsia , Flight No : I5 2645 ,  Departure: 08.40 AM, Arrival: 09:50AM", Price: "2459"},
         {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 05.00 PM, Arrival: 05:55PM", Price: "2890"},
-        
         ]
     },
-    
   ]
 
 localStorage.setItem("Database", JSON.stringify(Database));
@@ -136,28 +135,23 @@ Database = JSON.parse(localStorage.getItem("Database"));
 console.log(typeof Database); //object
 console.log(Database);
 
+function welcome()
+{
+    var id=localStorage.getItem("user_id");
+    var name=JSON.parse(window.localStorage.getItem("username"));
+    var msg=document.getElementById("message").innerHTML;
+    var message="Welcome";
+    document.getElementById("message").innerHTML=msg+message+"<br>"+name[id]; 
+}
+
 function validate()
 {
- 
-    var  start_city = document.getElementById("start").value;
-    var  end_city = document.getElementById("end").value;
-    traveller = document.getElementById("travel").value;
-    date= document.getElementById("day1").value;
-    console.log(date);  
-    
-
     var g = document.getElementById("start");
     var strUser = g.options[g.selectedIndex].value;
-    var strUser1 = g.options[g.selectedIndex].text;
-
     var h = document.getElementById("end");
     var strUser2 = h.options[h.selectedIndex].value;
-    var strUser3 = h.options[h.selectedIndex].text;
-
     var p = document.getElementById("trip");
    	var strUser4 = p.options[p.selectedIndex].value;
-  	var strUser5 = p.options[p.selectedIndex].text;
-
 
     if(strUser==0 && strUser2==0)
     {
@@ -171,164 +165,227 @@ function validate()
     {
     alert("Please select type of trip");
     }
-    else if(traveller=="")
+    else if(document.getElementById("day1").value=="")
     {
     alert("Please enter no.of.travellers");
     }
     else
     {
-      localStorage.setItem('start', start_city); 
-      localStorage.setItem('end', end_city);
-      localStorage.setItem('traveller_count',traveller);
-      localStorage.setItem('dot',date);  
-      alert("Planning Trip");
-      compare();
+        if(window.localStorage["startcity"] !=null)
+ 
+        start_city = JSON.parse(window.localStorage["startcity"]);
+        start_city.push(document.getElementById("start").value);
+        window.localStorage["startcity"] = JSON.stringify(start_city);
+
+        if(window.localStorage["endcity"] !=null)
+ 
+        end_city = JSON.parse(window.localStorage["endcity"]);
+        end_city.push(document.getElementById("end").value);
+        window.localStorage["endcity"] = JSON.stringify(end_city);
+
+        if(window.localStorage["trip"] !=null)
+ 
+        trip = JSON.parse(window.localStorage["triptype"]);
+        trip.push(document.getElementById("trip").value);
+        window.localStorage["triptype"] = JSON.stringify(trip);
+
+        if(window.localStorage["traveller_count"] !=null)
+ 
+        traveller = JSON.parse(window.localStorage["traveller_count"]);
+        traveller.push(document.getElementById("travel").value);
+        window.localStorage["traveller_count"] = JSON.stringify(traveller);
+
+        if(document.getElementById("trip").value == "Oneway-Trip")
+        {
+        if(window.localStorage["date"] !=null)
+ 
+        date = JSON.parse(window.localStorage["date"]);
+        date.push(document.getElementById("day1").value);
+        window.localStorage["date"] = JSON.stringify(date);
+        }
+        if(document.getElementById("trip").value == "Round-Trip")
+        {
+        if(window.localStorage["date1"] !=null)
+        date1 = JSON.parse(window.localStorage["date1"]);
+        date1.push(document.getElementById("day2").value);
+        window.localStorage["date1"] = JSON.stringify(date1);
+        }
+       compare();
     }
 }
 
 function compare()
 {
-  var key1 =  localStorage.getItem('start');
-  var key2 = localStorage.getItem('end');
+    var id=localStorage.getItem("user_id");
+    key1 =  JSON.parse(window.localStorage.getItem("startcity"));
+    console.log(key1)
+    key2 = JSON.parse(window.localStorage.getItem("endcity"));
   
     for(var i=0;i<Database.length;i++)
     {
-      if(key1==Database[i].from && key2==Database[i].to)
-     {
+      if(key1[id]==Database[i].from && key2[id]==Database[i].to)
+       {
        for(var j=0;j<Database[i].flight.length;j++)
        {
        var x = Database[i].flight[j].flight_details;
        var y = Database[i].flight[j].Price;
-       dd.push(x);
-       pp.push(y);
-       window.localStorage.setItem("output",JSON.stringify(dd));
-       window.localStorage.setItem("output_price",JSON.stringify(pp));   
+        dd.push(x);
+        window.localStorage["output"] = JSON.stringify(dd);
+        pp.push(y);
+        window.localStorage["output_price"]=JSON.stringify(pp);   
        }   
        console.log(dd);
        console.log(pp);
        alert("Flight search..."); 
-       window.location.assign("../Source/redirect.html");
-       
-   }
-  }
+       window.location.assign("../Source/redirect.html");   
+      }
+    }
 }
 
  function display()
 {
    disp = JSON.parse(window.localStorage.getItem("output"));
-   disp1 = JSON.parse(window.localStorage.getItem("output_price"))
+   disp1 = JSON.parse(window.localStorage.getItem("output_price"));
   for(i=0;i<disp.length;i++)
   {
     var html=document.getElementById("Result").innerHTML;
     document.getElementById("Result").innerHTML= html+"<br>"+ "<input type='radio' id='r' value='disp' name='radio[]'>"+"&nbsp"+disp[i]+' '+"Price:Rs. "+ disp1[i]+'<br>';
     console.log("<input type='radio' id='r' value='disp' name='radio[]'>"+disp[i]+' '+"Price: "+disp1[i]+'<br>');
+  }
 }
-}
+
 function booking()
 {
-    var flight=new Array();
-    flight = document.getElementsByName("radio[]");
-    if (flight[0].checked == true) 
+  var flight=new Array();
+  flight = document.getElementsByName("radio[]");
+  for(var i=0;i<4;i++)
     {
-    alert("You have chosen a flight");
-    console.log(disp[0]);
-    choice.push(disp[0]);
-    choice_Price.push(disp1[0]);
-    window.localStorage.setItem("choice",JSON.stringify(choice));
-    window.localStorage.setItem("choicePrice",JSON.stringify(choice_Price));
-    window.location.assign("../Source/redirect1.html");
-    }
-    else if (flight[1].checked == true) 
-    {
-    alert("You have chosen a flight");
-    console.log(disp[1]);
-    choice.push(disp[1]);
-    choice_Price.push(disp1[1]);
-    window.localStorage.setItem("choice",JSON.stringify(choice));
-    window.localStorage.setItem("choicePrice",JSON.stringify(choice_Price));
-    window.location.assign("../Source/redirect1.html");
-    }
-    else if (flight[2].checked == true) 
-    {
-    alert("You have chosen a flight");
-    console.log(disp[2]);
-    choice.push(disp[2]);
-    choice_Price.push(disp1[2]);
-    window.localStorage.setItem("choice",JSON.stringify(choice));
-    window.localStorage.setItem("choicePrice",JSON.stringify(choice_Price));
-    window.location.assign("../Source/redirect1.html");
-    }
-    else if (flight[3].checked == true) 
-    {
-    alert("You have chosen a flight");
-    console.log(disp[3]);
-    choice.push(disp[3]);
-    choice_Price.push(disp1[3]);
-    window.localStorage.setItem("choice",JSON.stringify(choice));
-    window.localStorage.setItem("choicePrice",JSON.stringify(choice_Price));
-    window.location.assign("../Source/redirect1.html");
-    }
-    else 
-    {
-    alert("Choose a flight");
-    }
+        if (flight[i].checked == true) 
+        {
+        alert("You have chosen a flight");
+        console.log(disp[i]);
+        if(window.localStorage["choice"] !=null)
+        choice = JSON.parse(window.localStorage["choice"]);
+        choice.push(disp[i]);
+        window.localStorage["choice"] = JSON.stringify(choice);
+        
+        if(window.localStorage["choiceprice"] !=null)
+        choice_Price = JSON.parse(window.localStorage["choiceprice"]);
+        choice_Price.push(disp1[i]);
+        window.localStorage["choiceprice"] = JSON.stringify(choice_Price);
+
+        window.location.assign("../Source/redirect1.html");
+        }
+    }             
 }
 
 function userchoice()
 {
-    /*var display_choice=JSON.parse(window.localStorage.getItem("choice"));
-    var html2 = document.getElementById("Result1").innerHTML;
-    var s="<br>"
-    document.getElementById("Result1").innerHTML= html2+s+display_choice;*/
-     var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
-     var l="<br>"
-     var m="Date. of. Journey -"
-     var n="No. of. Travellers -"
-     a1=localStorage.getItem("start");
-     a2=localStorage.getItem("end");
-     a3=JSON.parse(window.localStorage.getItem("choice"));
-     a4=localStorage.getItem("traveller_count");
-     a5=localStorage.getItem("dot");
-     a6=JSON.parse(window.localStorage.getItem("choicePrice"));
-     console.log(a6);
-     html2 = document.getElementById("Result1").innerHTML;
+    var id=localStorage.getItem("user_id");
+    var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+    var l="<br>"
+    var m="Date. of. Journey -"
+    var n="No. of. Travellers -"
+    a1=JSON.parse(window.localStorage.getItem("startcity"));
+    a2=JSON.parse(window.localStorage.getItem("endcity"));
+    a3=JSON.parse(window.localStorage.getItem("traveller_count"));
+    a4=JSON.parse(window.localStorage.getItem("date"));
+
+    a5=JSON.parse(window.localStorage.getItem("choice"));
+    a6=JSON.parse(window.localStorage.getItem("choiceprice"));
+
+    html2 = document.getElementById("Result1").innerHTML;
     table+="<table border ='1'><tr><th>From</th><th>To</th><th>Flight Details</th><th>Price</th></tr>";
-    table+="<tr><td>" +a1+ "</td>" +"<td>" + a2+ "</td>" + "<td>"+ a3 +"</td>" + "<td>"+"Rs."+ a6 +"</td></tr></table>";
-    document.getElementById("Result1").innerHTML= html2+l+table+l+m+a5+l+n+a4;
+    table+="<tr><td>" +a1[id]+ "</td>" +"<td>" + a2[id]+ "</td>" + "<td>"+ a5[id] +"</td>" + "<td>"+"Rs."+ a6[id]+"x"+a3[id] +"</td></tr></table>";
+    document.getElementById("Result1").innerHTML= html2+l+table+l+l+m+a4[id]+l+l+n+a3[id];
 }
 
 function print()
 {
     window.location.assign("../Source/traveller.html");
-    var trav_name= document.getElementById("name").value;
-    var trav_email= document.getElementById("email").value;
-    var trav_num= document.getElementById("mobileno").value;
-    var trav_gender= document.getElementById("gender").value;
-    localStorage.setItem('traveller_name', trav_name); 
-    localStorage.setItem('traveller_email', trav_email);
-    localStorage.setItem('traveller_number',trav_num);
-    localStorage.setItem('traveller_gender',trav_gender);   
-    window.location.assign("../Source/print.html");
-    alert("Booked");
-}
 
+    if((document.getElementById("name").value)=="")
+    {
+        alert("please enter username");
+    }
+    else if(document.getElementById("email").value=="")
+    {
+        alert("please enter mail id");
+    }
+    else if(document.getElementById("mobileno").value=="")
+    {
+        alert("please enter mobile.no");
+    }
+    else{
+    if(window.localStorage["traveller_name"] !=null)
+    trav_name = JSON.parse(window.localStorage["traveller_name"]);
+    trav_name.push(document.getElementById("name").value);
+    window.localStorage["traveller_name"] = JSON.stringify(trav_name);
+
+    if(window.localStorage["traveller_email"] !=null)
+    trav_email = JSON.parse(window.localStorage["traveller_email"]);
+    trav_email .push(document.getElementById("email").value);
+    window.localStorage["traveller_email"] = JSON.stringify(trav_email );
+    
+    if(window.localStorage["traveller_mob"] !=null)
+    trav_num = JSON.parse(window.localStorage["traveller_mob"]);
+    trav_num .push(document.getElementById("mobileno").value);
+    window.localStorage["traveller_mob"] = JSON.stringify(trav_num );
+
+    if(window.localStorage["traveller_gender"] !=null)
+    trav_gender = JSON.parse(window.localStorage["traveller_gender"]);
+    trav_gender .push(document.getElementById("gender").value);
+    window.localStorage["traveller_gender"] = JSON.stringify(trav_gender );
+  
+    window.location.assign("../Source/print.html");
+    alert("Ticket Booked");
+    }
+}
 
 function ticket()
 {
-     var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+     var id=localStorage.getItem("user_id");
+     var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
      var l="<br>"
-     var m="Date. of. Journey-"
-     var b1=localStorage.getItem("start");
-     var b2=localStorage.getItem("end");
-     var b3=JSON.parse(window.localStorage.getItem("choice"));
-     var b4=localStorage.getItem("traveller_count");
-     var b5=localStorage.getItem("dot");
-     var b6=localStorage.getItem("traveller_name");
-     var b7=JSON.parse(window.localStorage.getItem("choicePrice"));
+     var m="Date. of. Journey : "
+     var b1=JSON.parse(window.localStorage.getItem("startcity"));
+     var b2=JSON.parse(window.localStorage.getItem("endcity"));
+     var b3=JSON.parse(window.localStorage.getItem("traveller_count"));
+     var b4=JSON.parse(window.localStorage.getItem("date"));
+     var b5=JSON.parse(window.localStorage.getItem('traveller_name'));
+     var b6=JSON.parse(window.localStorage.getItem("choice"));
+     var b7=JSON.parse(window.localStorage.getItem("choiceprice"));
     
     html3 = document.getElementById("Result2").innerHTML;
-    table1+="<table border ='1'><tr><th>Name</th><th>From</th><th>To</th><th>Flight Details</th><th>Travellers.No</th><th>Date.of.Journey</th><th>Price</th></tr>";
-    table1+="<tr><td>" +b6+"</td>"+"<td>"+b1+ "</td>" +"<td>" + b2+ "</td>" + "<td>"+ b3 +"</td>" + "<td>"+space+ b4 +"</td>" + "<td>"+ b5 +"</td>"+ "<td>"+"Rs."+ b4*b7 +"</td></tr></table>";
-    document.getElementById("Result2").innerHTML= html3+l+table1+l;
-}    
+    /*table1+="<table border ='1'><tr><th>Account Holder Name</th><th>From</th><th>To</th><th>Flight Details</th><th>Travellers.No</th><th>Date.of.Journey</th><th>Price</th></tr>";
+    table1+="<tr><td>"+space +b5[id]+"</td>"+"<td>"+b1[id]+ "</td>" +"<td>" + b2[id]+ "</td>" + "<td>"+ b6[id] +"</td>" + "<td>"+space+ b3[id] +"</td>" + "<td>"+ b4[id] +"</td>"+ "<td>"+"Rs."+ b3[id]*b7[id] +"</td></tr></table>";
+    document.getElementById("Result2").innerHTML= html3+l+table1+l+m+b4[id];*/
+    document.getElementById("Result2").innerHTML= html3+"Name : "+b5[id]+space+space+" "+m+b4[id]+l+l+"Class : Economy"+space+space+"From : "+b1[id]+space+space+"To : "+b2[id]+l+l+"Flight Details - "+b6[id]+l+l+"No. of. Travellers : "+b3[id]+l+l+"Price : "+b3[id]*b7[id];
+
+}   
+
+function Delete()
+{
+    localStorage.removeItem("output");
+    localStorage.removeItem("output_price");
+    localStorage.removeItem("choice");
+    localStorage.removeItem("choiceprice");
+    localStorage.removeItem("startcity");
+    localStorage.removeItem("endcity");
+    localStorage.removeItem("date");
+    localStorage.removeItem("date1");
+    localStorage.removeItem("triptype");
+    localStorage.removeItem("traveller_name");
+    localStorage.removeItem("traveller_email");
+    localStorage.removeItem("traveller_mob");
+    localStorage.removeItem("traveller_gender");
+    localStorage.removeItem("traveller_count");
+
+    window.location.assign("../Source/index.html")
+}
+
+    
+    
+
+
 
