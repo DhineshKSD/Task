@@ -16,7 +16,7 @@ var trav_email= [];
 var trav_num= [];
 var trav_gender= [];
 var a1=[];var a2=[];var a3=[];var a4=[];var a5=[];var a6=[];
-
+var ticket_id=[];
 Database=
 [
     {
@@ -284,8 +284,9 @@ function userchoice()
     var id=localStorage.getItem("user_id");
     var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
     var l="<br>"
-    var m="Date. of. Journey -"
-    var n="No. of. Travellers -"
+    var m="Date. of. Journey - "
+    var n="No. of. Travellers - "
+    var o="Total Fare - "
     a1=JSON.parse(window.localStorage.getItem("startcity"));
     a2=JSON.parse(window.localStorage.getItem("endcity"));
     a3=JSON.parse(window.localStorage.getItem("traveller_count"));
@@ -297,7 +298,7 @@ function userchoice()
     html2 = document.getElementById("Result1").innerHTML;
     table+="<table border ='1'><tr><th>From</th><th>To</th><th>Flight Details</th><th>Price</th></tr>";
     table+="<tr><td>" +a1[id]+ "</td>" +"<td>" + a2[id]+ "</td>" + "<td>"+ a5[id] +"</td>" + "<td>"+"Rs."+ a6[id]+"x"+a3[id] +"</td></tr></table>";
-    document.getElementById("Result1").innerHTML= html2+l+table+l+l+m+a4[id]+l+l+n+a3[id];
+    document.getElementById("Result1").innerHTML= html2+l+table+l+m+a4[id]+l+l+n+a3[id]+l+l+o+a6[id]*a3[id];
 }
 
 function print()
@@ -344,10 +345,17 @@ function print()
 
 function ticket()
 {
+     var x = Math.floor((Math.random() * 1000) + 1);
+     console.log(x);
+     if(window.localStorage["ticket"] !=null)
+        ticket_id = JSON.parse(window.localStorage["ticket"]);
+        ticket_id.push(x);
+        window.localStorage["ticket"] = JSON.stringify(ticket_id);
      var id=localStorage.getItem("user_id");
      var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+     var space1="&nbsp&nbsp";
      var l="<br>"
-     var m="Date. of. Journey : "
+     var m="   Date. of. Journey : "
      var b1=JSON.parse(window.localStorage.getItem("startcity"));
      var b2=JSON.parse(window.localStorage.getItem("endcity"));
      var b3=JSON.parse(window.localStorage.getItem("traveller_count"));
@@ -355,12 +363,12 @@ function ticket()
      var b5=JSON.parse(window.localStorage.getItem('traveller_name'));
      var b6=JSON.parse(window.localStorage.getItem("choice"));
      var b7=JSON.parse(window.localStorage.getItem("choiceprice"));
-    
+     var b8=JSON.parse(window.localStorage.getItem("ticket"));
     html3 = document.getElementById("Result2").innerHTML;
     /*table1+="<table border ='1'><tr><th>Account Holder Name</th><th>From</th><th>To</th><th>Flight Details</th><th>Travellers.No</th><th>Date.of.Journey</th><th>Price</th></tr>";
     table1+="<tr><td>"+space +b5[id]+"</td>"+"<td>"+b1[id]+ "</td>" +"<td>" + b2[id]+ "</td>" + "<td>"+ b6[id] +"</td>" + "<td>"+space+ b3[id] +"</td>" + "<td>"+ b4[id] +"</td>"+ "<td>"+"Rs."+ b3[id]*b7[id] +"</td></tr></table>";
     document.getElementById("Result2").innerHTML= html3+l+table1+l+m+b4[id];*/
-    document.getElementById("Result2").innerHTML= html3+"Name : "+b5[id]+space+space+" "+m+b4[id]+l+l+"Class : Economy"+space+space+"From : "+b1[id]+space+space+"To : "+b2[id]+l+l+"Flight Details - "+b6[id]+l+l+"No. of. Travellers : "+b3[id]+l+l+"Price : "+b3[id]*b7[id];
+    document.getElementById("Result2").innerHTML= html3+"Ticket-Id : "+b8[id]+space+space+space1+m+b4[id]+space+space+"Name : "+b5[id]+l+l+"Class : Economy"+space+space+"From : "+b1[id]+space+space+"To : "+b2[id]+l+l+"Flight Details - "+b6[id]+l+l+"No. of. Travellers : "+b3[id]+l+l+"Price : "+b3[id]*b7[id];
 
 }   
 
