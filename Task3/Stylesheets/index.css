@@ -75,7 +75,7 @@ label{
 }
 .tbtn{
     position: relative;
-    background:  #ffc107;
+    background:  #f3b809;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -85,6 +85,7 @@ label{
     height: 40px;
     left:65%;
     text-align: center;
+    border: 1px solid whitesmoke;
 }
 #trip_button
 {
@@ -93,13 +94,13 @@ label{
     top:10px;
     color: black;
 }
-#trip_button:hover{
+.tbtn:hover{
     background: rgb(154, 157, 160);
     color: #000;
 }
 .Logout{
     position: relative;
-    background:  #ffc107;
+    background: #f3b809;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -110,15 +111,32 @@ label{
     left:80%;
     bottom: 6%;
     text-align: center;
+    border: 1px solid whitesmoke;
 }
 #Logoutbtn
 {
     position: relative;
     text-decoration: none;
     top:10px;
-    color: black;
+    color: black;   
 }
-#Logoutbtn:hover{
+.Logout:hover{
     background: rgb(154, 157, 160);
     color: #000;
+}
+#message{
+    position: relative;
+    background-color: #ffc107;
+    opacity: 0.8;
+    width:15%;
+    height:25%;
+    right:86%;
+    bottom: 86%;
+    font-family:'Merienda', cursive;
+    font-weight: bold;
+    color:black;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 50px;
+    border:1px solid whitesmoke;
 }
