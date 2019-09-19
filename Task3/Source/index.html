@@ -7,7 +7,7 @@
                 <script src="../Javascript/script.js"></script>
                 <script src="../Javascript/coming.js"></script>
         </head>
-<body>
+<body onload="welcome()">
     <header>Bon-Voyage</header>
         <a><img alt="Image-not found" class="logo" src="../Resource/logo.png"></a> 
             <div class="tbtn">
@@ -16,6 +16,7 @@
             <div class="Logout">
                 <a id="Logoutbtn" href="../Source/login.html">Logout</a>
             </div>
+            
            <form class="form-submit" onsubmit="event.preventDefault();"  autocomplete="off">
             <div id="title">
                 <h1>Flight Search</h1>
@@ -88,8 +89,9 @@
                 <div class="search">
                         <button type="submit" id="btn" onclick="validate()">Search</button>
                 </div>
-                
-                
+                <div id="message">
+
+                </div>  
             </form>
             
 </body>
