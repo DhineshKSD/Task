@@ -1,63 +1,69 @@
-var name= new Array();
-var pw = new Array();
-// storing input from register-form
-// Get the modal
+var count=[];
+var user= []; var passwrd=[];
+var id=[];
+flag=true;
 
-function validate_reg()
+function  validate_reg() 
 {
-name = (document.getElementById('name').value);
-pw = (document.getElementById('pw').value);
+if((document.getElementById("name").value)=="")
+{
+    alert("please enter username");
+}
+else if(document.getElementById("pw").value=="")
+{
+    alert("please enter password");
+}
+else{  
+if(window.localStorage["username"] !=null)
+ 
+user = JSON.parse(window.localStorage["username"]);
+user.push(document.getElementById("name").value);
+window.localStorage["username"] = JSON.stringify(user);
 
-if(name == "")
-{
-    alert("Please enter Name");
-    return false;
-}
-else if(pw == "")
-{
-    alert("Please enter Password");
-    return false;
-}
-else{
-    addToLocalStorageArray('name', name)
-    addToLocalStorageArray('pw', pw)
-    alert("Registered Successfully");
-}
-}
 
-var addToLocalStorageArray = function (name, value) {
-    // Get the existing data
-    var existing=localStorage.getItem(name);
-    // If no existing data, create an array
-    // Otherwise, convert the localStorage string to an array
-    existing=existing?existing.split(',') : [];
-    // Add new data to localStorage Array
-    existing.push(value);
-    // Save back to localStorage
-    localStorage.setItem(name, existing.toString());
-    }
+if(window.localStorage["password"] !=null)
+
+passwrd=JSON.parse(window.localStorage["password"]);
+passwrd.push(document.getElementById("pw").value);
+window.localStorage["password"] = JSON.stringify(passwrd);
+
+alert("Registered Succesffuly");
+}
+}
 
 function validate_log()
 {
-    // stored data from the register-form
-    var storedName = localStorage.getItem("name");
-    var storedPw = localStorage.getItem("pw");
+var username1=JSON.parse(localStorage.getItem("username"));
+var password1=JSON.parse(localStorage.getItem("password"));
+console.log(username1);
+var usernameInput=document.getElementById("userName").value;
+var passwordInput=document.getElementById("userPw").value;
 
-    // entered data from the login-form
-    var userName = document.getElementById('userName').value;
-    var userPw = document.getElementById('userPw').value;
-
-    // check if stored data from register-form is equal to data from login form
-    if(userName == storedName && userPw == storedPw) {
-        alert('You are logged in.');
-        window.location.assign("../source/index.html")
-    }
-    else if(userName ==""||userPw =="")
+if(usernameInput!=""&&passwordInput!="") 
+{
+for(i=0;i<username1.length;i++){
+if(usernameInput==username1[i] && passwordInput==password1[i]) 
     {
-        alert('please enter the required fields');
+    flag=true;
+    var id=i;
+    localStorage.setItem("user_id",id);
+    break;
+    } 
+    else 
+    {
+    flag=false;
     }
-    else {
-    alert('ERROR');
     }
 
+    }
+    if(flag==true)
+    {
+    alert('Logging in');
+    window.location.assign("index.html");
+    }
+    else{
+    alert('Invalid Username and password');
+    document.getElementById("userName").value="";
+    document.getElementById("userPw").value="";
+    }
 }
