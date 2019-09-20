@@ -5,13 +5,13 @@
                 <title>Traveller Details</title>
                 <link rel="stylesheet" href="../Stylesheets/traveller.css">
                 <script src="../Javascript/script.js"></script>
-                <script src="../Javascript/coming.js"></script>
+                <script src="../Javascript/main.js"></script>
         </head>
         <body onload="ticket()">
         <header>Bon-Voyage</header>
         <a><img alt="Image-not found" class="logo" src="../Resource/logo.png"></a> 
         <div class="Logout">
-                <a id="Logoutbtn" href="../Source/login.html">Logout</a>
+                <a name="logout" id="Logoutbtn" href="../Source/login.html">Logout</a>
         </div>
         <div id="Result2" >
                 <h2>Air-Ticket</h2>
@@ -19,7 +19,7 @@
         </div>
         <a><img alt="Image-not found" class="codelogo" src="../Resource/qr code.png"></a> 
         <div class="Delete">
-                <a id="deletebtn" onclick="Delete()">Delete</a>
+                <a id="deletebtn" onclick="window.print();" target="_blank" >Print</a>
         </div>
 </body>
 </html>
