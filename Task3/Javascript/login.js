@@ -39,6 +39,16 @@ console.log(username1);
 var usernameInput=document.getElementById("userName").value;
 var passwordInput=document.getElementById("userPw").value;
 
+if(usernameInput=="")
+{
+    alert("please enter username");
+}
+else if(passwordInput=="")
+{
+    alert("please enter password");
+}
+else
+{
 if(usernameInput!=""&&passwordInput!="") 
 {
 for(i=0;i<username1.length;i++){
@@ -66,4 +76,5 @@ if(usernameInput==username1[i] && passwordInput==password1[i])
     document.getElementById("userName").value="";
     document.getElementById("userPw").value="";
     }
+}
 }
