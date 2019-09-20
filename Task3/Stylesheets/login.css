@@ -1,6 +1,6 @@
 .logo{
-    position: fixed;
-    top:40px;
+    position: relative;
+    top:1px;
     left:34px;
     width:70px;
     height: 70px;
@@ -13,7 +13,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    overflow-y: hidden;
     font-family: sans-serif;
     width:100%;
     height: 670px;;
@@ -39,7 +38,7 @@ header{
     background: rgb(14, 13, 13);
     opacity: 0.9;
     color: #fff;
-    top: 56%;
+    top: 60%;
     left: 85%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -53,7 +52,7 @@ header{
     background: rgb(14, 13, 13);
     opacity: 0.9;
     color: #fff;
-    top: 56%;
+    top: 60%;
     left: 60%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -213,7 +212,8 @@ h2{
     font-size: 1.2em;
     width:180px;
     height: 40px;
-    left:80%;
+    left:75%;
+    bottom:30px;
 }
 #myBtn:hover
 {
@@ -253,7 +253,89 @@ h2{
     text-decoration: none;
     cursor: pointer;
   }
-
+  .section-heading{
+      color: whitesmoke;
+      position: relative;
+      top:100px;
+      left:26%;
+  }
+  .container{
+      top:380px;
+      position: relative;
+      width:100%;
+      height:620px;
+      background-image: url(../Resource/1.jpg);
+  }
+  #contact
+  {
+    padding: 100px;
+    padding-top: 10px;
+    padding-left: 110px;
+    max-width: 500px;
+    position: relative;
+    left:60%;
+    bottom:5%;
+    background-color: rgba(12, 12, 12, 0.7);
+    width:15%;
+    height:35%;
+    font-family:'Merienda', cursive;
+    color: white;
+    border-radius: 80px 0 80px 0;
+  }
+  label{ 
+    width:200px;
+    display: inline-block;
+}
+.msgbtn
+{
+    position: relative;
+    background:  #ffc107;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 1em;
+    width:100px;
+    height: 30px;
+    left:18%;
+    top:6%;
+}
+.msgbtn:hover
+{
+    background: rgb(154, 157, 160);
+    color: #000;
+}
+.dest1{
+    position: relative;
+    width:200px;
+    height: 25%;
+    left:50px;
+    top:60%;
+   
+}
+.dest2{
+    position: relative;
+    width:200px;
+    height: 25%;
+    left:80px;
+    top:60%;
+}
+.dest3{
+    position: relative;
+    width:195px;
+    height: 25%;
+    right:27%;
+    top:300px;
+}
+.dest4{
+    position: relative;
+    width:195px;
+    height: 25%;
+    right:24%;
+    top:300px;
+}
+  
+    
 
 
 
