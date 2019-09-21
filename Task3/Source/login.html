@@ -57,26 +57,27 @@
         <section class="contact-form">
             <div class="container">
                         <div class="section-heading">
-                            <h2>Leave us a message</h2>
+                            <h3>Leave us a message</h3>
                         </div>
-                        <a><img alt="Image-not found" class="dest1" src="../Resource/chennai.jpg"></a>
-                        <a><img alt="Image-not found" class="dest2" src="../Resource/bangalore.jpg"></a>  
-                        <a><img alt="Image-not found" class="dest3" src="../Resource/trichy.jpg"></a> 
-                        <a><img alt="Image-not found" class="dest4" src="../Resource/kochi.jpg"></a> 
-                        <form id="contact" action="#" method="post">
+                        <h4>Travel Blog</h4>
+                        <a href="http://www.walkthroughindia.com/attraction/top-15-most-important-tourist-attractions-of-chennai/"><img alt="Image-not found" class="dest1" src="../Resource/chennai.jpg"></a>
+                        <a href="http://www.walkthroughindia.com/local/15-most-popular-and-must-visit-temples-in-and-around-bangalore/"><img alt="Image-not found" class="dest2" src="../Resource/bangalore.jpg"></a>  
+                        <a href="http://www.walkthroughindia.com/local/top-10-must-visit-tourist-temples-tiruchirappalli/"><img alt="Image-not found" class="dest3" src="../Resource/trichy.jpg"></a> 
+                        <a href="http://www.walkthroughindia.com/itinerary/see-kochi-24-hours/"><img alt="Image-not found" class="dest4" src="../Resource/kochi.jpg"></a> 
+                        <form id="contact">
                                 
                                 <label for="msgname">Name:</label>
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required=""><br><br>
+                                <input name="contactname" type="text" class="form-control" id="contactname" placeholder="Your name..." required=""><br><br>
                                 
                                 
                                 <label for="email">Email:</label>    
-                                 <input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required=""><br><br>
+                                 <input name="contactemail" type="text" class="form-control" id="contactemail" placeholder="Your email..." required=""><br><br>
                                 
                                
                                 <label id="message" for="message">Message:</label>  
-                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea><br>
+                                <textarea name="contactmessage" class="form-control" id="contactmessage" placeholder="Your message..." required=""></textarea><br>
                                 
-                                <button type="submit" id="form-submit" class="msgbtn" onclick="">Submit</button> 
+                                <button type="submit" id="form-submit" class="msgbtn" onclick="contact()">Submit</button> 
                                 
                         </form>
                        
