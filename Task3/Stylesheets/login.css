@@ -260,7 +260,7 @@ h2{
       left:26%;
   }
   .container{
-      top:380px;
+      top:360px;
       position: relative;
       width:100%;
       height:620px;
@@ -269,15 +269,15 @@ h2{
   #contact
   {
     padding: 100px;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-left: 110px;
     max-width: 500px;
     position: relative;
     left:60%;
-    bottom:5%;
+    bottom:135px;
     background-color: rgba(12, 12, 12, 0.7);
     width:15%;
-    height:35%;
+    height:30%;
     font-family:'Merienda', cursive;
     color: white;
     border-radius: 80px 0 80px 0;
@@ -298,7 +298,7 @@ h2{
     width:100px;
     height: 30px;
     left:18%;
-    top:6%;
+    top:15%;
 }
 .msgbtn:hover
 {
@@ -310,29 +310,46 @@ h2{
     width:200px;
     height: 25%;
     left:50px;
-    top:60%;
+    top:10px;
+    border-radius:20px;
    
 }
 .dest2{
     position: relative;
     width:200px;
     height: 25%;
-    left:80px;
-    top:60%;
+    left:90px;
+    top:10px;
+    border-radius:20px;
 }
 .dest3{
     position: relative;
-    width:195px;
+    width:200px;
     height: 25%;
-    right:27%;
-    top:300px;
+    right:26.5%;
+    top:230px;
+    border-radius:20px;
 }
 .dest4{
     position: relative;
-    width:195px;
+    width:200px;
     height: 25%;
-    right:24%;
-    top:300px;
+    right:23.5%;
+    top:230px;
+    border-radius:20px;
+}
+h3{
+    position: relative;
+    color: whitesmoke;
+    font-size: 1.5em;
+    left:42%;
+    bottom:35px;
+}
+h4{
+    position: relative;
+    color: whitesmoke;
+    font-size: 1.5em;
+    left:200px;
 }
   
     
