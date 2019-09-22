@@ -13,7 +13,8 @@ else if(document.getElementById("pw").value=="")
 {
     alert("please enter password");
 }
-else{  
+else
+{  
 if(window.localStorage["username"] !=null)
  
 user = JSON.parse(window.localStorage["username"]);
