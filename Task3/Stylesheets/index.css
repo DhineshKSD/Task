@@ -75,7 +75,8 @@ label{
 }
 .tbtn{
     position: relative;
-    background:  #f3b809;
+    background:   #ffc107;
+    opacity: 0.9;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -100,7 +101,8 @@ label{
 }
 .Logout{
     position: relative;
-    background: #f3b809;
+    background:  #ffc107;
+    opacity: 0.9;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
