@@ -20,113 +20,112 @@ var ticket_id=[];
 Database=
 [
     {
-        from: "Chennai", to: "Trichy",
-        flight: [
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 7143,  Departure: 04.55 AM,  Arrival: 06.25AM", Price: "3672"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 02.55 PM, Arrival: 04.25PM", Price: "3812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 9945 ,  Departure: 01.15 PM, Arrival: 02.25PM", Price: "4259"},
-        {flight_details: "Flight Name: Air-India , Flight No : AI 591 ,  Departure: 07.20 AM, Arrival: 08.20AM", Price: "3950"},
-      ]
+    from: "Chennai", to: "Trichy",
+    flight: [
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 7143,  Departure: 04.55 AM,  Arrival: 06.25AM", Price: "3672"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 02.55 PM, Arrival: 04.25PM", Price: "3812"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 9945 ,  Departure: 01.15 PM, Arrival: 02.25PM", Price: "4259"},
+    {flight_details: "Flight Name: Air-India , Flight No : AI 591 ,  Departure: 07.20 AM, Arrival: 08.20AM", Price: "3950"},
+    ]
     },
     {
-        from: "Chennai", to: "Bangalore",
-        flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45PM", Price: "2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40AM", Price: "2459"},
-        ]
+    from: "Chennai", to: "Bangalore",
+    flight: [
+    {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "1751"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45PM", Price: "2149"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40AM", Price: "2459"},
+    ]
     },
     {
-        from: "Chennai", to: "Cochin",
-        flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 513 ,  Departure: 08.25 AM, Arrival: 09.35PM", Price: "2751"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 09.10 PM, Arrival: 10.25PM", Price: "2812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2015 ,  Departure: 12.40 PM, Arrival: 01.55PM", Price: "2859"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 776,  Departure: 07.40 PM,  Arrival: 08.45PM", Price: "2949"},
-        
-        ]
+    from: "Chennai", to: "Cochin",
+    flight: [
+    {flight_details: "Flight Name: Air-India , Flight No : AI 513 ,  Departure: 08.25 AM, Arrival: 09.35PM", Price: "2751"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 09.10 PM, Arrival: 10.25PM", Price: "2812"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2015 ,  Departure: 12.40 PM, Arrival: 01.55PM", Price: "2859"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 776,  Departure: 07.40 PM,  Arrival: 08.45PM", Price: "2949"},
+    ]
     },
     {
-        from: "Trichy", to: "Chennai",
-        flight: [
-            {flight_details: "Flight Name: IndiGo , Flight No : 6E 7143,  Departure: 06.55 AM,  Arrival: 07.25AM", Price: "3672"},
-            {flight_details: "Flight Name: Air-India , Flight No : AI 591 ,  Departure: 07.30 AM, Arrival: 08.30AM", Price: "3950"},
-            {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 02.55 PM, Arrival: 04.05PM", Price: "3812"},
-            {flight_details: "Flight Name: AirAsia , Flight No : I5 9945 ,  Departure: 01.15 PM, Arrival: 02.25PM", Price: "4259"},
-        ]
+    from: "Trichy", to: "Chennai",
+    flight: [
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 9945 ,  Departure: 01.15 PM, Arrival: 02.25PM", Price: "4259"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 7143,  Departure: 06.55 AM,  Arrival: 07.25AM", Price: "3672"},
+    {flight_details: "Flight Name: Air-India , Flight No : AI 591 ,  Departure: 07.30 AM, Arrival: 08.30AM", Price: "3950"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 02.55 PM, Arrival: 04.05PM", Price: "3812"},
+    ]
     },
     {
-        from: "Trichy", to: "Bangalore",
-        flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2459"},
-        ]
+    from: "Trichy", to: "Bangalore",
+    flight: [
+    {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "2251"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2459"},
+    ]
     },
     {
-        from: "Trichy", to: "Cochin",
-        flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2459"},
-        ]
+    from: "Trichy", to: "Cochin",
+    flight: [
+    {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "2051"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1912"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2659"},
+    ]
     },
     {
-        from: "Bangalore", to: "Chennai",
-        flight: [
-            {flight_details: "Flight Name: IndiGo , Flight No : 6E 856,  Departure: 07.40 PM,  Arrival: 08.45PM", Price: "2149"},
-            {flight_details: "Flight Name: Air-India , Flight No : AI 5563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "1751"},
-            {flight_details: "Flight Name: Spicejet , Flight No : SG 7335 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
-            {flight_details: "Flight Name: AirAsia , Flight No : I5 2335 ,  Departure: 08.40 AM, Arrival: 09.40AM", Price: "2459"},
-        ]
+    from: "Bangalore", to: "Chennai",
+    flight: [
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
+    {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "1751"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45PM", Price: "2149"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40AM", Price: "2459"},
+    ]
     },
     {
-        from: "Bangalore", to: "Trichy",
-        flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2459"},
-        ]
+    from: "Bangalore", to: "Trichy",
+    flight: [
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
+    {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "2251"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2459"},
+    ]
     },
     {
-        from: "Bangalore", to: "Cochin",
-        flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2459"},
-        ]
+    from: "Bangalore", to: "Cochin",
+    flight: [
+    {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "2751"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2549"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "2812"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2459"},
+    ]
     },
     {
-        from: "Cochin", to: "Chennai",
-        flight: [
-            {flight_details: "Flight Name: Air-India , Flight No : AI 513 ,  Departure: 09.25 AM, Arrival: 10.35PM", Price: "2751"},
-            {flight_details: "Flight Name: IndiGo , Flight No : 6E 776,  Departure: 09.40 PM,  Arrival: 10.45PM", Price: "2949"},  
-            {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 09.10 PM, Arrival: 10.25PM", Price: "2812"},
-            {flight_details: "Flight Name: AirAsia , Flight No : I5 2015 ,  Departure: 12.50 PM, Arrival: 01.55PM", Price: "2859"},  
-        ]
+    from: "Cochin", to: "Chennai",
+    flight: [
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2015 ,  Departure: 12.40 PM, Arrival: 01.55PM", Price: "2859"},
+    {flight_details: "Flight Name: Air-India , Flight No : AI 513 ,  Departure: 08.25 AM, Arrival: 09.35PM", Price: "2751"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 09.10 PM, Arrival: 10.25PM", Price: "2812"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 776,  Departure: 07.40 PM,  Arrival: 08.45PM", Price: "2949"}, 
+    ]
     },
     {
-        from: "Cochin",to: "Trichy",
-        flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "1751"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1812"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2459"},
-        ]
+    from: "Cochin",to: "Trichy",
+    flight: [
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "1912"},
+    {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "2051"},
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2659"},
+    ]
     },
     {
-        from: "Cochin", to: "Bangalore",
-        flight: [
-        {flight_details: "Flight Name: Air-India , Flight No : AI 5163 ,  Departure: 12.20 PM, Arrival: 01.25PM", Price: "2536"},
-        {flight_details: "Flight Name: IndiGo , Flight No : 6E 836,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2149"},
-        {flight_details: "Flight Name: AirAsia , Flight No : I5 2645 ,  Departure: 08.40 AM, Arrival: 09.50AM", Price: "2459"},
-        {flight_details: "Flight Name: Spicejet , Flight No : SG 7345 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "2890"},
-        ]
+    from: "Cochin", to: "Bangalore",
+    flight: [
+    {flight_details: "Flight Name: IndiGo , Flight No : 6E 806,  Departure: 07.40 PM,  Arrival: 08.45AM", Price: "2549"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 7245 ,  Departure: 05.00 PM, Arrival: 05.55PM", Price: "2812"},
+    {flight_details: "Flight Name: Air-India , Flight No : AI 563 ,  Departure: 01.20 PM, Arrival: 02.25PM", Price: "2751"},
+    {flight_details: "Flight Name: AirAsia , Flight No : I5 2345 ,  Departure: 08.40 AM, Arrival: 09.40PM", Price: "2459"},
+    ]
     },
   ]
 
@@ -135,7 +134,7 @@ Database = JSON.parse(localStorage.getItem("Database"));
 console.log(typeof Database); //object
 console.log(Database);
 
-function welcome()
+function welcome() //To display user name while booking
 {
     var id=localStorage.getItem("user_id");
     var name=JSON.parse(window.localStorage.getItem("username"));
@@ -144,7 +143,7 @@ function welcome()
     document.getElementById("message").innerHTML=msg+message+"<br>"+name[id]; 
 }
 
-function validate()
+function validate() //To validate the fields during flight search
 {
     var g = document.getElementById("start");
     var strUser = g.options[g.selectedIndex].value;
@@ -214,7 +213,7 @@ function validate()
     }
 }
 
-function compare()
+function compare() // Compare user search request with local database
 {
     var id=localStorage.getItem("user_id");
     key1 =  JSON.parse(window.localStorage.getItem("startcity"));
@@ -225,24 +224,24 @@ function compare()
     {
       if(key1[id]==Database[i].from && key2[id]==Database[i].to)
        {
-       for(var j=0;j<Database[i].flight.length;j++)
-       {
-       var x = Database[i].flight[j].flight_details;
-       var y = Database[i].flight[j].Price;
-        dd.push(x);
-        window.localStorage["output"] = JSON.stringify(dd);
-        pp.push(y);
-        window.localStorage["output_price"]=JSON.stringify(pp);   
-       }   
-       console.log(dd);
-       console.log(pp);
-       alert("Searching Flights..."); 
-       window.location.assign("../Source/redirect.html");   
+        for(var j=0;j<Database[i].flight.length;j++)
+        {
+        var x = Database[i].flight[j].flight_details;
+        var y = Database[i].flight[j].Price;
+            dd.push(x);
+            window.localStorage["output"] = JSON.stringify(dd);
+            pp.push(y);
+            window.localStorage["output_price"]=JSON.stringify(pp);   
+        }   
+        console.log(dd);
+        console.log(pp);
+        alert("Searching Flights..."); 
+        window.location.assign("../Source/redirect.html");   
       }
     }
 }
 
- function display()
+ function display() // Display the available flights for the user request
 {
    disp = JSON.parse(window.localStorage.getItem("output"));
    disp1 = JSON.parse(window.localStorage.getItem("output_price"));
@@ -254,7 +253,7 @@ function compare()
   }
 }
 
-function booking()
+function booking() 
 {
   var flight=new Array();
   var flag=0;
@@ -267,14 +266,14 @@ function booking()
         alert("You have chosen a flight");
         console.log(disp[i]);
         if(window.localStorage["choice"] !=null)
-        choice = JSON.parse(window.localStorage["choice"]);
+        choice = JSON.parse(window.localStorage["choice"]); 
         choice.push(disp[i]);
-        window.localStorage["choice"] = JSON.stringify(choice);
+        window.localStorage["choice"] = JSON.stringify(choice); //user choice stored in a array (flight details)
         
         if(window.localStorage["choiceprice"] !=null)
         choice_Price = JSON.parse(window.localStorage["choiceprice"]);
         choice_Price.push(disp1[i]);
-        window.localStorage["choiceprice"] = JSON.stringify(choice_Price);
+        window.localStorage["choiceprice"] = JSON.stringify(choice_Price); //user choice stored in a array (flight price)
 
         window.location.assign("../Source/redirect1.html");
         }
@@ -285,7 +284,7 @@ function booking()
     }          
 }
 
-function userchoice()
+function userchoice() //to review the booked flight details
 {
     var id=localStorage.getItem("user_id");
     var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
@@ -297,7 +296,6 @@ function userchoice()
     a2=JSON.parse(window.localStorage.getItem("endcity"));
     a3=JSON.parse(window.localStorage.getItem("traveller_count"));
     a4=JSON.parse(window.localStorage.getItem("date"));
-
     a5=JSON.parse(window.localStorage.getItem("choice"));
     a6=JSON.parse(window.localStorage.getItem("choiceprice"));
 
@@ -324,44 +322,49 @@ function print_content()
         alert("please enter mobile.no");
     }
     else{
-    if(window.localStorage["traveller_name"] !=null)
-    trav_name = JSON.parse(window.localStorage["traveller_name"]);
-    trav_name.push(document.getElementById("name").value);
-    window.localStorage["traveller_name"] = JSON.stringify(trav_name);
+        if(window.localStorage["traveller_name"] !=null)
+        trav_name = JSON.parse(window.localStorage["traveller_name"]);
+        trav_name.push(document.getElementById("name").value);
+        window.localStorage["traveller_name"] = JSON.stringify(trav_name);
 
-    if(window.localStorage["traveller_email"] !=null)
-    trav_email = JSON.parse(window.localStorage["traveller_email"]);
-    trav_email .push(document.getElementById("email").value);
-    window.localStorage["traveller_email"] = JSON.stringify(trav_email );
+        if(window.localStorage["traveller_email"] !=null)
+        trav_email = JSON.parse(window.localStorage["traveller_email"]);
+        trav_email .push(document.getElementById("email").value);
+        window.localStorage["traveller_email"] = JSON.stringify(trav_email );
+        
+        if(window.localStorage["traveller_mob"] !=null)
+        trav_num = JSON.parse(window.localStorage["traveller_mob"]);
+        trav_num .push(document.getElementById("mobileno").value);
+        window.localStorage["traveller_mob"] = JSON.stringify(trav_num );
+
+        if(window.localStorage["traveller_gender"] !=null)
+        trav_gender = JSON.parse(window.localStorage["traveller_gender"]);
+        trav_gender .push(document.getElementById("gender").value);
+        window.localStorage["traveller_gender"] = JSON.stringify(trav_gender );
     
-    if(window.localStorage["traveller_mob"] !=null)
-    trav_num = JSON.parse(window.localStorage["traveller_mob"]);
-    trav_num .push(document.getElementById("mobileno").value);
-    window.localStorage["traveller_mob"] = JSON.stringify(trav_num );
+        window.location.assign("../Source/print.html");
+        alert("Ticket Booked");
 
-    if(window.localStorage["traveller_gender"] !=null)
-    trav_gender = JSON.parse(window.localStorage["traveller_gender"]);
-    trav_gender .push(document.getElementById("gender").value);
-    window.localStorage["traveller_gender"] = JSON.stringify(trav_gender );
-  
-    window.location.assign("../Source/print.html");
-    alert("Ticket Booked");
+        var x = Math.floor((Math.random() * 1000) + 1); //to generate ticket id dynamically
+        console.log(x);
+        if(window.localStorage["ticket"] !=null)
+            ticket_id = JSON.parse(window.localStorage["ticket"]);
+            ticket_id.push(x);
+            window.localStorage["ticket"] = JSON.stringify(ticket_id);
     }
 }
 
 function ticket()
 {
-     var x = Math.floor((Math.random() * 1000) + 1);
-     console.log(x);
-     if(window.localStorage["ticket"] !=null)
-        ticket_id = JSON.parse(window.localStorage["ticket"]);
-        ticket_id.push(x);
-        window.localStorage["ticket"] = JSON.stringify(ticket_id);
+     
+
      var id=localStorage.getItem("user_id");
      var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
      var space1="&nbsp&nbsp&nbsp&nbsp&nbsp";
      var l="<br>"
      var m="   Date. of. Journey : "
+
+     var tid= JSON.parse(window.localStorage.getItem("ticket"));
      var b1=JSON.parse(window.localStorage.getItem("startcity"));
      var b2=JSON.parse(window.localStorage.getItem("endcity"));
      var b3=JSON.parse(window.localStorage.getItem("traveller_count"));
@@ -369,12 +372,11 @@ function ticket()
      var b5=JSON.parse(window.localStorage.getItem('traveller_name'));
      var b6=JSON.parse(window.localStorage.getItem("choice"));
      var b7=JSON.parse(window.localStorage.getItem("choiceprice"));
-     var b8=JSON.parse(window.localStorage.getItem("ticket"));
     html3 = document.getElementById("Result2").innerHTML;
     /*table1+="<table border ='1'><tr><th>Account Holder Name</th><th>From</th><th>To</th><th>Flight Details</th><th>Travellers.No</th><th>Date.of.Journey</th><th>Price</th></tr>";
     table1+="<tr><td>"+space +b5[id]+"</td>"+"<td>"+b1[id]+ "</td>" +"<td>" + b2[id]+ "</td>" + "<td>"+ b6[id] +"</td>" + "<td>"+space+ b3[id] +"</td>" + "<td>"+ b4[id] +"</td>"+ "<td>"+"Rs."+ b3[id]*b7[id] +"</td></tr></table>";
     document.getElementById("Result2").innerHTML= html3+l+table1+l+m+b4[id];*/
-    document.getElementById("Result2").innerHTML= html3+"Ticket-Id : "+b8[id]+space+space+"From : "+b1[id]+space+space+"To : "+b2[id]+space+space+"Name : "+b5[id]+l+l+"Class : Economy"+space+space1+m+b4[id]+l+l+"Flight Details - "+b6[id]+l+l+"No. of. Travellers : "+b3[id]+l+l+"Price : "+b3[id]*b7[id];
+    document.getElementById("Result2").innerHTML= html3+"Ticket-Id : "+tid[id]+space+space+"From : "+b1[id]+space+space+"To : "+b2[id]+space+space+"Name : "+b5[id]+l+l+"Class : Economy"+space+space1+m+b4[id]+l+l+"Flight Details - "+b6[id]+l+l+"No. of. Travellers : "+b3[id]+l+l+"Price : "+b3[id]*b7[id];
 }   
 
 function Delete()
@@ -435,7 +437,6 @@ function Delete()
     localStorage.removeItem("traveller_mob");
     localStorage.removeItem("traveller_gender");
     localStorage.removeItem("traveller_count");
-
     */
 }
 
