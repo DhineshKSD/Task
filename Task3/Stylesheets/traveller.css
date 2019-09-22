@@ -102,7 +102,7 @@ h2{
 .Logout{
     position: relative;
     background:  #ffc107;
-    opacity: 0.85;
+    opacity: 0.8;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -126,7 +126,7 @@ h2{
     background: rgb(154, 157, 160);
     color: #000;
 }
-.Delete{
+.Download{
     position: relative;
     background:  #ffc107;
     opacity: 0.85;
@@ -137,19 +137,19 @@ h2{
     font-size: 1.2em;
     width:180px;
     height: 40px;
-    left:80%;
-    bottom: 25%;
+    left:35%;
+    bottom: 10%;
     text-align: center;
     border: 1px solid whitesmoke;
 }
-#deletebtn
+#Downloadbtn
 {
     position: relative;
     text-decoration: none;
     top:10px;
     color: black;
 }
-.Delete:hover{
+.Download:hover{
     background: rgb(154, 157, 160);
     color: #000;
 }
@@ -163,4 +163,31 @@ h2{
     left:80%;
     width:150px;
     height: 150px;
+}
+.Delete{
+    position: relative;
+    background:  #ffc107;
+    opacity: 0.85;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 1.2em;
+    width:180px;
+    height: 40px;
+    left:50%;
+    bottom: 16%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+}
+#Deletebtn
+{
+    position: relative;
+    text-decoration: none;
+    top:10px;
+    color: black;
+}
+.Delete:hover{
+    background: rgb(154, 157, 160);
+    color: #000;
 }
