@@ -378,9 +378,51 @@ function ticket()
 }   
 
 function Delete()
-{
-    localStorage.removeItem("output");
-    localStorage.removeItem("output_price");
+{   
+    /*var k1 = document.getElementById("start").value;
+    var k2 = document.getElementById("end").value;
+    var k3 = document.getElementById("trip").value;
+    var k4 = document.getElementById("travel").value;
+    var k4 = document.getElementById("day1").value;*/
+    var id=localStorage.getItem("user_id");
+    
+    var a = JSON.parse(localStorage.getItem("startcity"));
+    a.splice(id, 1);
+    start_city = JSON.stringify(a);
+    localStorage.setItem("startcity", start_city);
+
+    var b = JSON.parse(localStorage.getItem("endcity"));
+    b.splice(id, 1);
+    end_city = JSON.stringify(b);
+    localStorage.setItem("endcity", end_city);
+
+    var c = JSON.parse(localStorage.getItem("date"));
+    c.splice(id, 1);
+    date = JSON.stringify(c);
+    localStorage.setItem("date", date);
+
+    var d = JSON.parse(localStorage.getItem("triptype"));
+    d.splice(id, 1);
+    trip = JSON.stringify(d);
+    localStorage.setItem("triptype",trip);
+
+    var e = JSON.parse(localStorage.getItem("choice"));
+    e.splice(id, 1);
+    choice = JSON.stringify(e);
+    localStorage.setItem("choice",choice);
+
+    var f = JSON.parse(localStorage.getItem("choiceprice"));
+    f.splice(id, 1);
+    choice_price = JSON.stringify(f);
+    localStorage.setItem("choiceprice",choice_price);
+
+    var g = JSON.parse(localStorage.getItem("traveller_count"));
+    g.splice(id, 1);
+    traveller = JSON.stringify(g);
+    localStorage.setItem("traveller_count",traveller);
+
+    window.location.assign("../Source/index.html")
+    /*localStorage.removeItem("output_price");
     localStorage.removeItem("choice");
     localStorage.removeItem("choiceprice");
     localStorage.removeItem("startcity");
@@ -394,7 +436,7 @@ function Delete()
     localStorage.removeItem("traveller_gender");
     localStorage.removeItem("traveller_count");
 
-    window.location.assign("../Source/index.html")
+    */
 }
 
     
