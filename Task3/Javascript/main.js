@@ -245,7 +245,6 @@ function compare() // Compare user search request with local database
     }
 }
 
-
  function display() // Display the available flights for the user request
 { 
    carousel();
@@ -375,8 +374,6 @@ function print_content()
 
 function ticket()
 {
-     
-
      var id=localStorage.getItem("user_id");
      var space="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
      var space1="&nbsp&nbsp&nbsp&nbsp&nbsp";
@@ -436,6 +433,75 @@ function update() //to edit trip selection
     g.splice(id, 1);
     traveller = JSON.stringify(g);
     localStorage.setItem("traveller_count",traveller);
+
+    window.location.assign("../Source/index.html");
+}
+
+function Deletefn()
+{
+    var id=localStorage.getItem("user_id");
+    
+    var a = JSON.parse(localStorage.getItem("startcity"));
+    a.splice(id, 1);
+    start_city = JSON.stringify(a);
+    localStorage.setItem("startcity", start_city);
+
+    var b = JSON.parse(localStorage.getItem("endcity"));
+    b.splice(id, 1);
+    end_city = JSON.stringify(b);
+    localStorage.setItem("endcity", end_city);
+
+    var c = JSON.parse(localStorage.getItem("date"));
+    c.splice(id, 1);
+    date = JSON.stringify(c);
+    localStorage.setItem("date", date);
+
+    var d = JSON.parse(localStorage.getItem("triptype"));
+    d.splice(id, 1);
+    trip = JSON.stringify(d);
+    localStorage.setItem("triptype",trip);
+
+    var e = JSON.parse(localStorage.getItem("choice"));
+    e.splice(id, 1);
+    choice = JSON.stringify(e);
+    localStorage.setItem("choice",choice);
+
+    var f = JSON.parse(localStorage.getItem("choiceprice"));
+    f.splice(id, 1);
+    choice_price = JSON.stringify(f);
+    localStorage.setItem("choiceprice",choice_price);
+
+    var g = JSON.parse(localStorage.getItem("traveller_count"));
+    g.splice(id, 1);
+    traveller = JSON.stringify(g);
+    localStorage.setItem("traveller_count",traveller);
+
+    var h = JSON.parse(localStorage.getItem("traveller_name"));
+    h.splice(id,1);
+    trav_name = JSON.stringify(h);
+    localStorage.setItem("traveller_name",trav_name);
+
+    var i = JSON.parse(localStorage.getItem("traveller_email"));
+    i.splice(id,1);
+    trav_email = JSON.stringify(i);
+    localStorage.setItem("traveller_email",trav_email);
+
+    var j = JSON.parse(localStorage.getItem("traveller_mob"));
+    j.splice(id,1);
+    trav_num = JSON.stringify(j);
+    localStorage.setItem("traveller_mob",trav_num);
+
+    var k = JSON.parse(localStorage.getItem("traveller_gender"));
+    k.splice(id,1);
+    trav_gender = JSON.stringify(k);
+    localStorage.setItem("traveller_gender",trav_gender);
+
+    var l = JSON.parse(localStorage.getItem("ticket"));
+    l.splice(id,1);
+    ticket_id = JSON.stringify(l);
+    localStorage.setItem("ticket",ticket_id);
+
+    alert("Your ticket has been deleted")
 
     window.location.assign("../Source/index.html");
 }
