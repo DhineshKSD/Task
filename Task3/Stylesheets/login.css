@@ -350,6 +350,22 @@ h4{
     font-size: 1.5em;
     left:200px;
 }
+.dest1:hover
+{
+    transform: scale(1.15);
+}
+.dest2:hover
+{
+    transform: scale(1.15);
+}
+.dest3:hover
+{
+    transform: scale(1.15);
+}
+.dest4:hover
+{
+    transform: scale(1.15);
+}
   
     
 
