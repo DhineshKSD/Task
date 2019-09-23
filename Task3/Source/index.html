@@ -50,20 +50,10 @@
                         <fieldset>
                             <div class="radio-select">
                                     <label for="tripselection">Trip-Selection</label>
-                                    <select id="trip" name="trip" onChange="changetextbox();">
-                                            <option value=" " selected="selected">Trip</option>
+                                    <select id="trip" name="trip" onChange="">
+                                            <option value=" " selected="selected">Select-Trip</option>
                                             <option value="Oneway-Trip">Oneway-Trip</option>
-                                            <option value="Round-Trip">Round-Trip</option>
-                                    </select>
-                                <!--   <div class="ow" >
-                                            <label for="oneway">Oneway</label>
-                                            <input type="radio" name="trip" id="oneway" value="one-way" onclick="javascript:onewayCheck();" required="required">
-                                    </div>
-                                    <div class="rt">
-                                        <label for="round">Round-Trip</label>
-                                        <input type="radio" name="trip" id="round" value="round" onclick="javascript:onewayCheck();" required="required">
-                                    </div>
-                                -->    
+                                    </select> 
                             </div>
                             </div>
                         </fieldset> 
@@ -78,12 +68,6 @@
                     <fieldset>
                         <label for="departure">Departure date:</label>
                         <input type="date" id="day1"  placeholder="Select date...">
-                    </fieldset>
-                </div>
-                <div class="retdate" id="ifoneway">
-                    <fieldset>
-                        <label for="return">Return date:</label>
-                        <input type="date" id="day2" placeholder="Select date...">
                     </fieldset>
                 </div>
                 <div class="search">
