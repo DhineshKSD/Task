@@ -16,7 +16,7 @@ var trav_email= [];
 var trav_num= [];
 var trav_gender= [];
 var a1=[];var a2=[];var a3=[];var a4=[];var a5=[];var a6=[];
-var ticket_id=[];
+var ticket_id=[];var slideIndex = 0;
 Database=
 [
     {
@@ -164,9 +164,13 @@ function validate() //To validate the fields during flight search
     {
     alert("Please select type of trip");
     }
-    else if(document.getElementById("day1").value=="")
+    else if(document.getElementById("travel").value=="")
     {
     alert("Please enter no.of.travellers");
+    }
+    else if(document.getElementById("day1").value=="")
+    {
+    alert("Please enter date");
     }
     else
     {
@@ -241,8 +245,10 @@ function compare() // Compare user search request with local database
     }
 }
 
+
  function display() // Display the available flights for the user request
-{
+{ 
+   carousel();
    disp = JSON.parse(window.localStorage.getItem("output"));
    disp1 = JSON.parse(window.localStorage.getItem("output_price"));
   for(i=0;i<disp.length;i++)
@@ -251,6 +257,19 @@ function compare() // Compare user search request with local database
     document.getElementById("Result").innerHTML= html+"<br>"+ "<input type='radio' id='r' value='disp' name='radio[]'>"+"&nbsp"+disp[i]+' '+"Price:Rs. "+ disp1[i]+'<br>';
     console.log("<input type='radio' id='r' value='disp' name='radio[]'>"+disp[i]+' '+"Price: "+disp1[i]+'<br>');
   }
+}
+
+function carousel() //slideshow
+{
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
 function booking() 
@@ -301,7 +320,7 @@ function userchoice() //to review the booked flight details
 
     html2 = document.getElementById("Result1").innerHTML;
     table+="<table border ='1'><tr><th>From</th><th>To</th><th>Flight Details</th><th>Price</th></tr>";
-    table+="<tr><td>" +a1[id]+ "</td>" +"<td>" + a2[id]+ "</td>" + "<td>"+ a5[id] +"</td>" + "<td>"+"Rs."+ a6[id]+"x"+a3[id] +"</td></tr></table>";
+    table+="<tr><td>" +a1[id]+ "</td>" +"<td>" + a2[id]+ "</td>" + "<td>"+ a5[id] +"</td>" + "<td>"+"Rs."+ a6[id] +"</td></tr></table>";
     document.getElementById("Result1").innerHTML= html2+l+table+l+m+a4[id]+l+l+n+a3[id]+l+l+o+a6[id]*a3[id];
 }
 
@@ -379,13 +398,8 @@ function ticket()
     document.getElementById("Result2").innerHTML= html3+"Ticket-Id : "+tid[id]+space+space+"From : "+b1[id]+space+space+"To : "+b2[id]+space+space+"Name : "+b5[id]+l+l+"Class : Economy"+space+space1+m+b4[id]+l+l+"Flight Details - "+b6[id]+l+l+"No. of. Travellers : "+b3[id]+l+l+"Price : "+b3[id]*b7[id];
 }   
 
-function Delete()
+function update() //to edit trip selection
 {   
-    /*var k1 = document.getElementById("start").value;
-    var k2 = document.getElementById("end").value;
-    var k3 = document.getElementById("trip").value;
-    var k4 = document.getElementById("travel").value;
-    var k4 = document.getElementById("day1").value;*/
     var id=localStorage.getItem("user_id");
     
     var a = JSON.parse(localStorage.getItem("startcity"));
@@ -423,24 +437,13 @@ function Delete()
     traveller = JSON.stringify(g);
     localStorage.setItem("traveller_count",traveller);
 
-    window.location.assign("../Source/index.html")
-    /*localStorage.removeItem("output_price");
-    localStorage.removeItem("choice");
-    localStorage.removeItem("choiceprice");
-    localStorage.removeItem("startcity");
-    localStorage.removeItem("endcity");
-    localStorage.removeItem("date");
-    localStorage.removeItem("date1");
-    localStorage.removeItem("triptype");
-    localStorage.removeItem("traveller_name");
-    localStorage.removeItem("traveller_email");
-    localStorage.removeItem("traveller_mob");
-    localStorage.removeItem("traveller_gender");
-    localStorage.removeItem("traveller_count");
-    */
+    window.location.assign("../Source/index.html");
 }
 
-    
+
+
+
+ 
     
 
 
