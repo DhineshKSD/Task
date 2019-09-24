@@ -134,6 +134,14 @@ Database=
     {flight_details: "Flight Name: Spicejet , Flight No : SG 529,  Departure: 11.40 PM,  Arrival: 05.45 AM", Price: "7549"},
     {flight_details: "Flight Name: Air-India , Flight No : AI 863 ,  Departure: 11.35 AM, Arrival: 06.05 PM", Price: "8512"},
     ]
+   },
+   {
+    from: "Singapore", to: "Bangalore",
+    flight: [
+    {flight_details: "Flight Name: Air-Mail, Flight No : AIE 580 ,  Departure: 07.20 PM, Arrival: 02.25 AM", Price: "7562"},
+    {flight_details: "Flight Name: Spicejet , Flight No : SG 5329,  Departure: 11.40 AM,  Arrival: 05.45 PM", Price: "7549"},
+    {flight_details: "Flight Name: Air-India , Flight No : AI 753 ,  Departure: 11.35 AM, Arrival: 06.05 PM", Price: "8512"},
+    ]
    }
   ]
 
@@ -389,6 +397,10 @@ function print_content()
     else if(document.getElementById("mobileno").value=="")
     {
         alert("please enter mobile.no");
+    }
+    else if(document.getElementById("gov_id").value=="")
+    {
+        alert("please enter Govt Id no");
     }
     else{
         if(window.localStorage["traveller_name"] !=null)
