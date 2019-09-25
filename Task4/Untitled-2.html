@@ -6,14 +6,22 @@
 <p id="demo"></p>
 
 <script>
-const developer = {
-    name: 'Andrew',
-    sayHello: function () 
-    {
-    console.log(this.name);
-    }
-};
-developer.sayHello();
+
+function makeAdder(x) 
+{
+  
+   function ss() 
+  {
+    console.log(x);
+  };
+  return ss();
+}
+
+var add5 = makeAdder(5);
+var add10 = makeAdder(10);
+
+
+
 </script>
 
 </body>
