@@ -1,38 +1,53 @@
 <html>
 <body>
 
-<h2>Airlines</h2>
+<h1>The Garage</h1>
 
 <p id="demo"></p>
 
 <script>
-function Airlines(from,to,flight,flightno,price)
-{
-    this.from = from;
-    this.to = to;
-    this.flight = flight;
-    this.flightno = flightno;
-    this.price = price;
-    this.display = function (){
-        console.log(`Flight No - ${this.flightno}  Airlines - ${this.flight}  From : ${this.from}  To : ${this.to}  Cost - ${this.price}`);
-    } 
-}
+var vehicle = [
+    { product: 'Car',
 
-// the above constructor function can be used create a class of objects
+     name: 'Innova'
 
+     },
 
-const object1 = new Airlines('Chennai','Trichy','Spicejet', 'SG 415', 4500);
+    { product: 'Bike',
+
+    name: 'Yamaha'
+ }
+  ];
 
 
-const object2 = new Airlines('Chennai','Trichy','Air-India','AI 8055', 5000);
 
-console.log(object1);
-object1.display();
+  //using call
+  
+  for (var i = 0; i < vehicle.length; i++) {
 
-console.log(object2);
-object2.display();
+    (function(i) {
 
+      this.print = function() {
+        console.log('#' + i + ' ' + this.product + ': ' + this.name);
+      }
+      this.print();
+    }).call(vehicle[i], i);
+  }
+
+
+
+  //using apply
+  for (var i = 0; i < vehicle.length; i++) {
+    (function(i) {
+
+      this.print = function() {
+        console.log('#' + i + ' ' + this.product + ': ' + this.name);
+      }
+      this.print();
+    }).apply(vehicle[i], [i]);
+  }
 </script>
 
 </body>
 </html>
+ 
