@@ -1,0 +1,44 @@
+<html>
+<body>
+
+<h1>The Garage</h1>
+
+<p id="demo"></p>
+
+<script>
+
+const bike = {
+    brand : "Honda",
+    model : "CBR",
+    ex_price : 135000,
+    onroad : function()
+    {
+        var rto = 1500;
+        var insurance = 10000; 
+        document.getElementById("demo").innerHTML = ' The Onroad Price of '+(this.brand)+" "+(this.model)+' is Rs.'+ (rto+insurance+this.ex_price) +"<br>";
+        console.log(' The Price of Yamaha R15 is Rs.'+ (rto+insurance+this.ex_price));
+    }
+};
+
+bike.onroad();
+
+console.log(bike);
+
+bike.color = "Black";
+
+bike.capacity = "150 CC";
+
+console.log(bike);
+
+console.log(bike.color);
+
+document.getElementById("demo").innerHTML += 'The Ex-Showroom Price of '+(bike.brand)+" "+(bike.model)+' variant'+bike.capacity+' is Rs.'+ bike.ex_price;
+
+</script>
+
+</body>
+</html>
+
+
+
+
