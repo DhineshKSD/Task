@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<h1>The Moto Hub</h1>
+
+<p id="demo"></p>
+
+<script>
+
+const bike='YAMAHA'; //global declaration
+
+function onroad_price(price,tax,ins_price)
+{
+
+    var exshowroom_price = price;
+
+    var rto_tax = tax;
+
+    var insurance_price = ins_price;
+   
+    return function display() //closure
+    {
+        return(exshowroom_price+rto_tax+insurance_price);
+    }
+}
+
+let r15 = onroad_price(120000,10000,1500);
+document.getElementById("demo").innerHTML = ' The Onroad price of Yamaha R15 is Rs.'+ r15();
+
+</script>
+
+</body>
+</html>
+
