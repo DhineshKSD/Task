@@ -1,0 +1,134 @@
+<html>
+<body>
+<p id="showroom"></p>
+<button id="btn1" type="button" onclick="bikes.display()">Brands</button> 
+<p id="demo"></p>
+
+<button id="btn2" type="button" onclick="bike1.display_bike()+bike2.display_bike()">RoyalEnfield</button> 
+<p id="top_line1"></p>
+<p id="demo1"></p>
+<p id="bot_line1"></p>
+
+<button id="btn2" type="button" onclick="bike3.display_bike()">Yamaha</button> 
+<p id="top_line2"></p>
+<p id="demo2"></p>
+<p id="bot_line2"></p>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+    
+var name = "The Moto Hub"; //Global variable
+
+function disp_showroom()   //function to disp showroom name
+{
+document.getElementById("showroom").innerHTML=("--------------------------------------"+name+"-----------------------------------------<br><br>");
+document.getElementById("showroom").innerHTML+="{--Bikers of the world, welcome home to your dream bike shop The Moto Hub--}";
+}
+disp_showroom();           //fn call
+
+
+function brand(brand1,brand2,brand3,brand4,brand5) //Constructor Function
+{
+    this.brand1 = brand1;
+    this.brand2 = brand2;
+    this.brand3 = brand3;
+    this.brand4 = brand4;
+    this.brand5 = brand5;
+    this.display = function (){
+    document.getElementById("demo").innerHTML =`-----------------------------------Available Brands----------------------------------------<br><br>` ;
+    document.getElementById("demo").innerHTML+=`* Brand 1: ${this.brand1} <br> * Brand 2: ${this.brand2} <br> * Brand 3: ${this.brand3} <br> * Brand 4: ${this.brand4} <br> * Brand 5: ${this.brand5} <br><br>` ;
+    document.getElementById("demo").innerHTML+=`------------------------------------------------------------------------------------------------` ;
+    }
+} 
+const bikes = new brand("Royal Enfield","Yamaha","TVS","Bajaj","Honda")
+
+    
+
+class Bike_showroom                                //Class
+{ 
+    constructor(brand,model,year,color,price,tax,insurance) 
+    {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+    this.ex_price = price;
+    this.tax = tax;
+    this.insurance =insurance;
+    this.display_bike = function ()
+    {
+        if(this.brand=="Royal Enfield"){
+        document.getElementById("top_line1").innerHTML =`-----------------------------------Available Variants----------------------------------------<br><br>` ;    
+        document.getElementById("demo1").innerHTML+=`* Brand: ${this.brand}  <br> &nbsp&nbsp Model: ${this.model} <br> &nbsp&nbsp Year: ${this.year} model <br> &nbsp&nbsp Variant:  "${this.color}"<br> &nbsp&nbsp Price: Rs.${this.ex_price}<br><br>`;
+        document.getElementById("bot_line1").innerHTML=`---------------------------------------------------------------------------------------------------` ;
+        }
+        if(this.brand=="Yamaha")
+        {
+        document.getElementById("top_line2").innerHTML =`-----------------------------------Available Variants----------------------------------------<br><br>` ;        
+        document.getElementById("demo2").innerHTML+=`* Brand: ${this.brand}  <br> &nbsp&nbsp Model: ${this.model} <br> &nbsp&nbsp Year: ${this.year} model <br> &nbsp&nbsp Variant:  "${this.color}"<br> &nbsp&nbsp Price: Rs.${this.ex_price}<br><br>`;
+        document.getElementById("bot_line2").innerHTML=`---------------------------------------------------------------------------------------------------` ;
+        }
+    }
+    }    
+}
+    Bike_showroom.prototype.calculate_onroadprice = function() //prototype
+    {
+        return(this.ex_price+this.tax+this.insurance);
+    }
+    Bike_showroom.prototype.display_onroadprice=function()
+    {
+    var original_price=this.calculate_onroadprice();
+    document.getElementById("demo3").innerHTML+=`----- The On-road price of "${this.brand}-${this.model}" model is Rs. `+ original_price+' ------<br><br>';
+    };
+
+
+const bike1 = new Bike_showroom("Royal Enfield","Classic 350",2018,"Matte Black",165000,1760,10000); //instantiation
+
+//bike1.display_bike();
+bike1.display_onroadprice();
+
+const bike2 = Object.create(bike1);
+
+console.log(bike2);
+bike2.model = "Thunderbird 350X";
+bike2.year = 2019;
+bike2.ex_price = 175000;
+console.log(bike2);
+
+//bike2.display_bike();
+bike2.display_onroadprice();
+
+const bike3 = new Bike_showroom("Yamaha","R15 v3",2019,"Matte Black & Red",145000,1560,9000); //instantiation
+
+//bike3.display_bike();
+bike3.display_onroadprice();
+
+const bike4 = new Bike_showroom("TVS","Apache 4V",2019,"Blue",140000,1460,8700); //instantiation
+
+Bike_showroom.prototype.discount_price=5000;
+
+
+const dp1=Bike_showroom.prototype.discounted_price=(function(){
+    bike1.ex_price=bike1.ex_price-bike1.discount_price;
+    document.getElementById("demo4").innerHTML+=("* The discounted ex-showroom price of "+bike1.brand+" "+ bike1.model+" is Rs."+" "+bike1.ex_price+ "<br><br>");
+})();
+
+const dp2=Bike_showroom.prototype.discounted_price=(function(){
+    bike2.ex_price=bike2.ex_price-bike2.discount_price;
+    document.getElementById("demo4").innerHTML+=("* The discounted ex-showroom price of "+bike2.brand+" "+ bike2.model+" is Rs."+" "+bike2.ex_price+ "<br><br>");
+})();
+
+const dp3=Bike_showroom.prototype.discounted_price=(function(){
+    bike3.ex_price=bike3.ex_price-bike3.discount_price;
+    document.getElementById("demo4").innerHTML+=("* The discounted ex-showroom price of "+bike3.brand+" "+ bike3.model+" is Rs."+" "+bike3.ex_price+ "<br><br>");
+})();
+
+
+
+</script>
+
+</body>
+</html>
+ 
