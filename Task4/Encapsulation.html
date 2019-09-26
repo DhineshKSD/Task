@@ -21,7 +21,7 @@ function showroom(brand,model,year,color,price,tax,insurance) //Constructor Func
     {
     document.getElementById("demo").innerHTML+=`* Ex-showroom price of ${this.brand} ${this.model}  (${this.year}) model "${this.color}" variant is Rs.${this.ex_price}`+"<br><br>";
     } 
-    
+
     this.calculate_onroadprice = function()
     {
         return(this.ex_price+this.tax+this.insurance);
@@ -30,7 +30,7 @@ function showroom(brand,model,year,color,price,tax,insurance) //Constructor Func
     this.display_onroadprice=function()
     {
     var original_price=this.calculate_onroadprice();
-    document.getElementById("demo1").innerHTML+=`* The original price of the car is Rs. `+ original_price;
+    document.getElementById("demo1").innerHTML+=`* The On-road price of the Bike is Rs. `+ original_price;
     };
 }
 
