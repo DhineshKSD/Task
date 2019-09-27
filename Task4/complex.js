@@ -5,10 +5,10 @@ function disp_showroom()   //function to display showroom name
 document.getElementById("showroom").innerHTML=("----------------------------------------"+name+"---------------------------------------------<br><br>");
 document.getElementById("showroom").innerHTML+="Bikers of the world, welcome home to your dream bike shop The Moto Hub.<br>Find your right bike/scooter from various brands at The Moto Hub. View two<br>  wheelers on road price, colours, compare bikes";
 }
-disp_showroom();           //fn call
+disp_showroom();        
 
 
-function brand(brand1,brand2,brand3,brand4,brand5) //Constructor Function
+function brand(brand1,brand2,brand3) //Constructor Function
 {
     this.brand1 = brand1;
     this.brand2 = brand2;
@@ -19,7 +19,7 @@ function brand(brand1,brand2,brand3,brand4,brand5) //Constructor Function
     document.getElementById("demo").innerHTML+=`------------------------------------------------------------------------------------------------` ;
     }
 } 
-const bikes = new brand("Royal Enfield","Yamaha","TVS","Bajaj","Honda")
+const bikes = new brand("Royal Enfield","Yamaha","TVS","Bajaj","Honda") //object creation
 bikes.display();
     
 
@@ -64,15 +64,18 @@ class Bike_showroom                                //Class
     {
     var original_price=this.calculate_onroadprice();           //encapsulation
         if(this.brand=="Royal Enfield"){
+        document.getElementById("separator1").innerHTML =`------------------------------------On-Road Price----------------------------------------<br><br>` ;    
         document.getElementById("onroad1").innerHTML+=`----- The On-road price of "${this.brand}-${this.model}" model is Rs. `+ original_price+' ------<br><br>';
         document.getElementById("onroad1").innerHTML+=` Ex-showroom Price: Rs. ${this.ex_price}<br> Road Tax: Rs. ${this.tax}<br> Insurance: Rs. ${this.insurance} <br><br>`;
         }
         if(this.brand=="Yamaha")
-        {     
+        {
+        document.getElementById("separator2").innerHTML =`------------------------------------On-Road Price----------------------------------------<br><br>` ;             
         document.getElementById("onroad2").innerHTML+=`----- The On-road price of "${this.brand}-${this.model}" model is Rs. `+ original_price+' ------<br><br>';
         document.getElementById("onroad2").innerHTML+=` Ex-showroom Price: Rs. ${this.ex_price}<br> Road Tax: Rs. ${this.tax}<br> Insurance: Rs. ${this.insurance} <br><br>`;
         }
         if(this.brand=="TVS"){ 
+        document.getElementById("separator3").innerHTML =`------------------------------------On-Road Price----------------------------------------<br><br>` ;    
         document.getElementById("onroad3").innerHTML+=`----- The On-road price of "${this.brand}-${this.model}" model is Rs. `+ original_price+' ------<br><br>';
         document.getElementById("onroad3").innerHTML+=` Ex-showroom Price: Rs. ${this.ex_price}<br> Road Tax: Rs. ${this.tax}<br> Insurance: Rs. ${this.insurance} <br><br>`;
         }
@@ -125,15 +128,18 @@ Bike_showroom.prototype.display_discountprice=function()
 {
     if(this.brand=="Royal Enfield")
     {
+        document.getElementById("separator1x").innerHTML =`-------------------------------------Discount Price----------------------------------------<br><br>` ;    
         document.getElementById("discount1").innerHTML+=("* The discounted price of "+bike1.brand+" "+ bike1.model+" is Rs."+" "+dp1+ "<br><br>");
         document.getElementById("discount1").innerHTML+=("* The discounted price of "+bike1.brand+" "+ bike1.model+" is Rs."+" "+dp2+ "<br><br>");
     }
     if(this.brand=="Yamaha")
     {
+        document.getElementById("separator2x").innerHTML =`-------------------------------------Discount Price----------------------------------------<br><br>` ; 
         document.getElementById("discount2").innerHTML+=("* The discounted price of "+bike1.brand+" "+ bike1.model+" is Rs."+" "+dp3+ "<br><br>");
     }
     if(this.brand=="TVS")
     {
+        document.getElementById("separator3x").innerHTML =`-------------------------------------Discount Price----------------------------------------<br><br>` ; 
         document.getElementById("discount3").innerHTML+=("* The discounted price of "+bike1.brand+" "+ bike1.model+" is Rs."+" "+dp4+ "<br><br>");
     }
 }
