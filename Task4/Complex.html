@@ -1,153 +1,57 @@
+<!DOCTYPE html>
 <html>
+        <head>
+                <title>The Moto Hub</title>
+                <link rel="stylesheet" type="text/css" href="complex.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">        
+        </head> 
 <body>
+    <header>
+        <h1>The Moto Hub</h1>
+    </header>
 <p id="showroom"></p>
 <p id="demo"></p>
 
-<button id="btn2" type="button" onclick="bike1.display_bike()+bike2.display_bike()">RoyalEnfield</button> 
-<button id="btn4" type="button" onclick="bike1.display_onroadprice()+bike2.display_onroadprice()">On-Road Price</button> 
+<section id="Royalenfield">
+    <h2>Royal Enfield</h2>
+    <p id="quotes1">"Made Like a Gun, Goes Like a Bullet"</p>
+<button id="btn2" type="button" onclick="bike1.display_bike()+bike2.display_bike()">RoyalEnfield</button> <br><br>
+<button id="btn4" type="button" onclick="bike1.display_onroadprice()+bike2.display_onroadprice()">On-Road Price</button> <br><br>
+<button id="btn7" type="button" onclick="bike1.display_discountprice()">Discount Price</button> <br><br>
 <p id="top_line1"></p>
 <p id="demo1"></p>
 <p id="onroad1"></p>
+<p id="discount1"></p>
 <p id="bot_line1"></p>
+</section>
 
-
-<button id="btn2" type="button" onclick="bike3.display_bike()">Yamaha</button> 
-<button id="btn5" type="button" onclick="bike3.display_onroadprice()">On-Road Price</button>
+<section id="Yamaha">
+    <h3>YAMAHA</h3>
+    <p id="quotes2">"Revs Your Heart"</p>
+<button id="btn2" type="button" onclick="bike3.display_bike()">Yamaha</button> <br><br>
+<button id="btn5" type="button" onclick="bike3.display_onroadprice()">On-Road Price</button> <br><br>
+<button id="btn8" type="button" onclick="bike3.display_discountprice()">Discount Price</button> <br><br>
 <p id="top_line2"></p>
 <p id="demo2"></p>
 <p id="onroad2"></p>
+<p id="discount2"></p>
 <p id="bot_line2"></p>
+</section>
 
-<button id="btn3" type="button" onclick="bike4.display_bike()">TVS</button> 
-<button id="btn6" type="button" onclick="bike4.display_onroadprice()">On-Road Price</button>
+<section id="TVS">
+    <h4>TVS</h4>
+    <p id="quotes3">"Trust,Value,Service"</p>
+<button id="btn3" type="button" onclick="bike4.display_bike()">TVS</button> <br><br>
+<button id="btn6" type="button" onclick="bike4.display_onroadprice()">On-Road Price</button> <br><br>
+<button id="btn9" type="button" onclick="bike4.display_discountprice()">Discount Price</button> <br><br>
 <p id="top_line3"></p>
 <p id="demo3"></p>
 <p id="onroad3"></p>
+<p id="discount3"></p>
 <p id="bot_line3"></p>
+</section>
 
-
-<p id="discount"></p>
-
-
-
-<script>
-    
-var name = "The Moto Hub"; //Global variable
-
-function disp_showroom()   //function to display showroom name
-{
-document.getElementById("showroom").innerHTML=("--------------------------------------"+name+"-----------------------------------------<br><br>");
-document.getElementById("showroom").innerHTML+="{--Bikers of the world, welcome home to your dream bike shop The Moto Hub--}";
-}
-disp_showroom();           //fn call
-
-
-function brand(brand1,brand2,brand3,brand4,brand5) //Constructor Function
-{
-    this.brand1 = brand1;
-    this.brand2 = brand2;
-    this.brand3 = brand3;
-    this.display = function (){
-    document.getElementById("demo").innerHTML =`------------------------------------Available Brands----------------------------------------<br><br>` ;
-    document.getElementById("demo").innerHTML+=`* Brand 1: ${this.brand1} <br> * Brand 2: ${this.brand2} <br> * Brand 3: ${this.brand3} <br><br>` ;
-    document.getElementById("demo").innerHTML+=`------------------------------------------------------------------------------------------------` ;
-    }
-} 
-const bikes = new brand("Royal Enfield","Yamaha","TVS","Bajaj","Honda")
-bikes.display();
-    
-
-class Bike_showroom                                //Class
-{ 
-    constructor(brand,model,year,color,price,tax,insurance) 
-    {
-    this.brand = brand;
-    this.model = model;
-    this.year = year;
-    this.color = color;
-    this.ex_price = price;
-    this.tax = tax;
-    this.insurance =insurance;}
-    display_bike = function ()
-    {
-        if(this.brand=="Royal Enfield"){
-        document.getElementById("top_line1").innerHTML =`-----------------------------------Available Variants----------------------------------------<br><br>` ;    
-        document.getElementById("demo1").innerHTML+=`* Brand: ${this.brand}  <br> &nbsp&nbsp Model: ${this.model} <br> &nbsp&nbsp Year: ${this.year} model <br> &nbsp&nbsp Variant:  "${this.color}"<br> &nbsp&nbsp Price: Rs.${this.ex_price}<br><br>`;
-        document.getElementById("bot_line1").innerHTML=`---------------------------------------------------------------------------------------------------` ;
-        }
-        if(this.brand=="Yamaha")
-        {
-        document.getElementById("top_line2").innerHTML =`-----------------------------------Available Variants----------------------------------------<br><br>` ;        
-        document.getElementById("demo2").innerHTML+=`* Brand: ${this.brand}  <br> &nbsp&nbsp Model: ${this.model} <br> &nbsp&nbsp Year: ${this.year} model <br> &nbsp&nbsp Variant:  "${this.color}"<br> &nbsp&nbsp Price: Rs.${this.ex_price}<br><br>`;
-        document.getElementById("bot_line2").innerHTML=`---------------------------------------------------------------------------------------------------` ;
-        }
-        if(this.brand=="TVS")
-        {
-        document.getElementById("top_line3").innerHTML =`-----------------------------------Available Variants----------------------------------------<br><br>` ;        
-        document.getElementById("demo3").innerHTML+=`* Brand: ${this.brand}  <br> &nbsp&nbsp Model: ${this.model} <br> &nbsp&nbsp Year: ${this.year} model <br> &nbsp&nbsp Variant:  "${this.color}"<br> &nbsp&nbsp Price: Rs.${this.ex_price}<br><br>`;
-        document.getElementById("bot_line3").innerHTML=`---------------------------------------------------------------------------------------------------` ;
-        }
-    }
-        
-}
-    Bike_showroom.prototype.calculate_onroadprice = function() //prototype
-    {
-        return(this.ex_price+this.tax+this.insurance);
-    }
-    Bike_showroom.prototype.display_onroadprice=function()
-    {
-    var original_price=this.calculate_onroadprice();
-        if(this.brand=="Royal Enfield"){
-        document.getElementById("onroad1").innerHTML+=`----- The On-road price of "${this.brand}-${this.model}" model is Rs. `+ original_price+' ------<br><br>';
-        }
-        if(this.brand=="Yamaha")
-        {     
-        document.getElementById("onroad2").innerHTML+=`----- The On-road price of "${this.brand}-${this.model}" model is Rs. `+ original_price+' ------<br><br>';
-        }
-        if(this.brand=="TVS"){ 
-        document.getElementById("onroad3").innerHTML+=`----- The On-road price of "${this.brand}-${this.model}" model is Rs. `+ original_price+' ------<br><br>';
-        }
-    };
-
-
-const bike1 = new Bike_showroom("Royal Enfield","Classic 350",2018,"Matte Black",165000,1760,10000); //instantiation
-
-const bike2 = Object.create(bike1);
-
-bike2.model = "Thunderbird 350X";
-bike2.year = 2019;
-bike2.ex_price = 175000;
-
-const bike3 = new Bike_showroom("Yamaha","R15 v3",2019,"Matte Black & Red",145000,1560,9000); //instantiation
-
-const bike4 = new Bike_showroom("TVS","Apache 4V",2019,"Blue",138000,1460,8700); //instantiation
-
-
-Bike_showroom.prototype.discount_price=5000;
-
-const dp1=Bike_showroom.prototype.discounted_price=(function(){
-    var x = bike1.ex_price-bike1.discount_price;
-    document.getElementById("discount").innerHTML+=("* The discounted price of "+bike1.brand+" "+ bike1.model+" is Rs."+" "+x+ "<br><br>");
-})();
-
-const dp2=Bike_showroom.prototype.discounted_price=(function(){
-    var x = bike2.ex_price-bike2.discount_price;
-    document.getElementById("discount").innerHTML+=("* The discounted  price of "+bike2.brand+" "+ bike2.model+" is Rs."+" "+x+ "<br><br>");
-})();
-
-const dp3=Bike_showroom.prototype.discounted_price=(function(){
-    var x = bike3.ex_price-bike3.discount_price;
-    document.getElementById("discount").innerHTML+=("* The discounted price of "+bike3.brand+" "+ bike3.model+" is Rs."+" "+x+ "<br><br>");
-})();
-
-const dp4=Bike_showroom.prototype.discounted_price=(function(){
-    var x = bike4.ex_price-bike4.discount_price;
-    document.getElementById("discount").innerHTML+=("* The discounted price of "+bike4.brand+" "+ bike4.model+" is Rs."+" "+x+ "<br><br>");
-})();
-
-
-</script>
-
+<script type="text/javascript" language="javascript" src="complex.js"></script>
 </body>
 </html>
  
