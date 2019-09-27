@@ -1,4 +1,9 @@
+<!DOCTYPE html>
 <html>
+        <head>
+              <title>The Moto Hub</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1">        
+        </head> 
 <body>
 
 <h2>The Moto Hub</h2>
@@ -6,41 +11,7 @@
 <p id="demo"></p>
 <p id="demo1"></p>
 
-<script>
-function showroom(brand,model,year,color,price,tax,insurance) //Constructor Function
-{
-    this.brand = brand;
-    this.model = model;
-    this.year = year;
-    this.color = color;
-    this.ex_price = price;
-    this.tax = tax;
-    this.insurance =insurance;
-
-    this.display = function ()
-    {
-    document.getElementById("demo").innerHTML+=`* Ex-showroom price of ${this.brand} ${this.model}  (${this.year}) model "${this.color}" variant is Rs.${this.ex_price}`+"<br><br>";
-    } 
-
-    this.calculate_onroadprice = function()
-    {
-        return(this.ex_price+this.tax+this.insurance);
-    }
-
-    this.display_onroadprice=function()
-    {
-    var original_price=this.calculate_onroadprice();
-    document.getElementById("demo1").innerHTML+=`* The On-road price of the Bike is Rs. `+ original_price;
-    };
-}
-
-bike1 = new showroom("Royal Enfield","Classic 350",2018,"Matte Black",165000,1760,10000);
-
-bike1.display();
-
-bike1.display_onroadprice();
-
-</script>
+<script type="text/javascript" language="javascript" src="Encapsulation.js"></script>
 
 </body>
 </html>
