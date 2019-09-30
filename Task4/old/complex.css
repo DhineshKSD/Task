@@ -1,0 +1,66 @@
+body
+{
+    background-color: bisque;
+}
+h1{
+    position: relative;
+    left:39%;
+    padding-bottom: 40px;
+}
+h2{
+    font-size: 1.5em;
+}
+#quotes1{
+    position: relative;
+    font-size: 1.5em;
+    right:9%;
+}
+h3{
+    position: relative;
+    font-size: 1.5em;
+    left:1%;
+}
+#quotes2{
+    position: relative;
+    font-size: 1.5em;
+    right:1.5%;
+}
+h4{
+    position: relative;
+    font-size: 1.5em;
+    left:2.5%;
+}
+#quotes3{
+    position: relative;
+    font-size: 1.5em;
+    right:3%;
+}
+#showroom{
+    position: relative;
+    left:28%;
+    padding-bottom: 40px;
+}
+#demo{
+    position: relative;
+    left:28%;
+}
+#Royalenfield,#Yamaha,#TVS
+{
+    position: relative;
+    left:42%
+}
+#top_line1,#demo1,#onroad1,#discount1,#bot_line1,#separator1,#separator1x
+{
+    position: relative;
+    right:14%
+}
+#top_line2,#demo2,#onroad2,#discount2,#bot_line2,#separator2,#separator2x
+{
+    position: relative;
+    right:14%
+}
+#top_line3,#demo3,#onroad3,#discount3,#bot_line3,#separator3,#separator3x
+{
+    position: relative;
+    right:14%
+}
