@@ -1,0 +1,68 @@
+<!DOCTYPE html>  
+<html>
+        <head>
+            <title>The Moto Hub</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">        
+        </head>
+<body>
+
+<h1>The Moto Hub</h1>
+
+<script>
+function bike(name,color) {
+    this.name = name;
+    this.color = color;
+}
+
+bike.prototype.display = function () {
+    console.log(this.bike);
+}
+
+function bike_showroom(name) {
+    this.name = name;
+    this.bikes = [];
+}
+
+bike_showroom.prototype.add = function (item) {
+    this.bikes.push(item);
+}
+
+bike_showroom.prototype.getbikeName = function (index) {
+    return this.bikes[index].name;
+}
+bike_showroom.prototype.getbikeColor = function(index) {
+    return this.bikes[index].color;
+}
+
+bike_showroom.prototype.describe = function() {
+    console.log(this.name);
+    for (let i = 0, length = this.bikes.length; i < length; i++) {
+        console.log("   ", this.getbikeName(i) , "of color " , this.getbikeColor(i));
+        
+    }
+}
+
+Showroom1 = new bike_showroom('Showroom 1');
+Showroom2 = new bike_showroom('Showroom 2');
+Showroom3 = new bike_showroom('Showroom 3');
+
+bike1 = new bike('Maruti800' , 300000);
+bike2 = new bike('Benz' , 900000);
+bike3 = new bike('Audi' , 1000000);
+
+Showroom1.add(bike1);
+Showroom1.add(bike2);
+
+Showroom2.add(bike1);
+Showroom2.add(bike3);
+
+Showroom3.add(bike1);
+Showroom3.add(bike2);
+Showroom3.add(bike3);
+
+Showroom1.describe();
+Showroom2.describe();
+Showroom3.describe();
+</script>
+</body>
+</html>
