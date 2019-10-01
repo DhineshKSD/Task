@@ -1,9 +1,9 @@
 {
-    "bikes" : [
-        {"brand1":"Royal Enfield"},
-        {"brand2": "Yamaha"},
-        {"brand3": "TVS"}
-    ]
+    "bikes" : {
+        "brand1":"Royal Enfield",
+        "brand2": "Yamaha",
+        "brand3": "TVS"  
+    }  
 }
 
  
