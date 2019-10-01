@@ -69,8 +69,7 @@ class Yamaha extends Bike_showroom                             //Polymorphism
     {
         document.getElementById("top_line2").innerHTML =`-----------------------------------------Available Variants----------------------------------------<br><br>` ;    
         document.getElementById("demo2").innerHTML+=`* Brand: ${this.brand}  <br> &nbsp&nbsp Model: ${this.model} <br> &nbsp&nbsp Year: ${this.year} model <br> &nbsp&nbsp Variant:  "${this.color}"<br> &nbsp&nbsp Price: Rs.${this.ex_price}<br><br>`;
-        document.getElementById("bot_line2").innerHTML=`-------------------------------------------------------------------------------------------------------` ;
-        
+        document.getElementById("bot_line2").innerHTML=`-------------------------------------------------------------------------------------------------------` ;    
     }    
 }
 
