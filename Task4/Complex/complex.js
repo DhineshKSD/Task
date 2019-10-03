@@ -20,7 +20,7 @@ var xmlhttp = new XMLHttpRequest();             //Ajax to read JSON data
 (function disp_showroom()                       //IIFE function to display showroom name
 {
 document.getElementById("showroom").innerHTML=("--------------------------------------------"+window.name+"---------------------------------------------<br><br>");//Prints welcome since it is a global variable accessible by window object
-document.getElementById("showroom").innerHTML+="Bikers of the world, welcome home to your dream bike shop The Moto Hub. Find your right <br> bike/scooter from various brands at The Moto Hub and compare the budget, price, and features.<br> Stay updated with latest reviews about bikes, compare bikes in your price range and stay tuned.<br><br>Avail amazing diwali discounts for your dream bike purchase on this month. <br> Hurry Up! Limited offer only!";
+document.getElementById("showroom").innerHTML+="Bikers of the world, welcome home to your dream bike shop Biker Buddy. Find your right <br> bike/scooter from various brands at Biker Buddy and compare the budget, price, and features.<br> Stay updated with latest reviews about bikes, compare bikes in your price range and stay tuned.<br><br>Avail amazing diwali discounts for your dream bike purchase on this month. <br> Hurry Up! Limited offer only!";
 })();
  
 function brand(brand1,brand2,brand3)            //Constructor Function
