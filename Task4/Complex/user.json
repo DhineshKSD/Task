@@ -48,7 +48,7 @@
         "color" : "Matte Black",
         "price":165000,
         "tax": 1760,
-        "insurance": 10000
+        "insurance": 9500
     },
     {
         "brand":"Royal Enfield",
@@ -82,7 +82,13 @@
     {"brand1":"Royal Enfield"},
     {"brand2": "Yamaha"},
     {"brand3": "TVS" }  
-]
+],
+   "discount_price":[
+    {"discount_price1":5000},
+    {"discount_price2": 6300},
+    {"discount_price3": 2100 }, 
+    {"discount_price4":4200 }
+   ]
 }
 
  
