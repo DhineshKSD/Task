@@ -52,10 +52,16 @@ h4{
     position: relative;
     text-align: center;
 }
-#Royalenfield,#Yamaha,#TVS
+#Royalenfield,#Yamaha,#TVS,#browse
 {
     position: relative;
     left:42%
+}
+#browse
+{
+    position: relative;
+    left:42%;
+    font-size: 1.5em;
 }
 #top_line1,#demo1,#onroad1,#discount1,#bot_line1,#separator1,#separator1x
 {
