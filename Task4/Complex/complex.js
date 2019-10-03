@@ -10,16 +10,17 @@ var xmlhttp = new XMLHttpRequest();             //Ajax to read JSON data
             localStorage.setItem("brand",JSON.stringify(myArr.brand));
             localStorage.setItem("bikedata",JSON.stringify(myArr.bikes));
             localStorage.setItem("user",JSON.stringify(myArr.user));
-            console.log(myArr.user)
+            localStorage.setItem("discount",JSON.stringify(myArr.discount_price));
+            console.log(myArr.discount_price)
         }
     };
-    xmlhttp.open("GET", "http://192.168.153.60:91/", true);
+    xmlhttp.open("GET", "http://192.168.153.60:96/", true);
     xmlhttp.send();
 
 (function disp_showroom()                       //IIFE function to display showroom name
 {
 document.getElementById("showroom").innerHTML=("--------------------------------------------"+window.name+"---------------------------------------------<br><br>");//Prints welcome since it is a global variable accessible by window object
-document.getElementById("showroom").innerHTML+="Bikers of the world, welcome home to your dream bike shop The Moto Hub.<br>Find your right bike/scooter from various brands at The Moto Hub. View two<br>  wheelers on road price, colours, compare bikes";
+document.getElementById("showroom").innerHTML+="Bikers of the world, welcome home to your dream bike shop The Moto Hub. Find your right <br> bike/scooter from various brands at The Moto Hub and compare the budget, price, and features.<br> Stay updated with latest reviews about bikes, compare bikes in your price range and stay tuned.<br><br>Avail amazing diwali discounts for your dream bike purchase on this month. <br> Hurry Up! Limited offer only!";
 })();
  
 function brand(brand1,brand2,brand3)            //Constructor Function
@@ -124,18 +125,25 @@ bike2.model = "Thunderbird 350X";   //Modifying Properties of bike2
 bike2.year = 2019;                  //Modifying Properties of bike2
 bike2.ex_price = 175000;            //Modifying Properties of bike2
 bike2.color = "Whimsical White";    //Modifying Properties of bike2
+bike2.insurance = 10000;
 
 const bike3 = new Yamaha(y[2].brand,y[2].model,y[2].year,y[2].color,y[2].price,y[2].tax,y[2].insurance) //creating object
 const bike4 = new Tvs(y[3].brand,y[3].model,y[3].year,y[3].color,y[3].price,y[3].tax,y[3].insurance) //creating object
 
-Bike_showroom.prototype.discount_price=5000;
+var dp = JSON.parse(window.localStorage.getItem("discount"));
+
+
+Bike_showroom.prototype.discount_price1=dp[0].discount_price1;
+Bike_showroom.prototype.discount_price2=dp[1].discount_price2;
+Bike_showroom.prototype.discount_price3=dp[2].discount_price3;
+Bike_showroom.prototype.discount_price4=dp[3].discount_price4;
 
 //IIFE
 Bike_showroom.prototype.discounted_price=(function(){
-    bike1.discounted_price = bike1.ex_price-bike1.discount_price;
-    bike2.discounted_price = bike2.ex_price-bike2.discount_price;
-    bike3.discounted_price = bike3.ex_price-bike3.discount_price;
-    bike4.discounted_price = bike4.ex_price-bike4.discount_price;    
+    bike1.discounted_price = bike1.ex_price-bike1.discount_price1;
+    bike2.discounted_price = bike2.ex_price-bike2.discount_price2;
+    bike3.discounted_price = bike3.ex_price-bike3.discount_price3;
+    bike4.discounted_price = bike4.ex_price-bike4.discount_price4;    
 })();
 
 Bike_showroom.prototype.display_discountprice=function()
@@ -143,18 +151,18 @@ Bike_showroom.prototype.display_discountprice=function()
     if(this.brand=="Royal Enfield")
     {
         document.getElementById("separator1x").innerHTML =`-------------------------------------------Discount Price------------------------------------------<br><br>` ;    
-        document.getElementById("discount1").innerHTML+=("* The discounted price of "+bike1.brand+" "+ bike1.model+" is Rs."+" "+bike1.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
-        document.getElementById("discount1").innerHTML+=("* The discounted price of "+bike2.brand+" "+ bike2.model+" is Rs."+" "+bike2.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
+        document.getElementById("discount1").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike1.discount_price1+" -- <br> * The discounted price of "+bike1.brand+" "+ bike1.model+" is Rs."+" "+bike1.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
+        document.getElementById("discount1").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike2.discount_price2+" -- <br> * The discounted price of "+bike2.brand+" "+ bike2.model+" is Rs."+" "+bike2.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
     }
     if(this.brand=="Yamaha")
     {
         document.getElementById("separator2x").innerHTML =`-------------------------------------------Discount Price------------------------------------------<br><br>` ; 
-        document.getElementById("discount2").innerHTML+=("* The discounted price of "+bike3.brand+" "+ bike3.model+" is Rs."+" "+bike3.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
+        document.getElementById("discount2").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike3.discount_price3+" -- <br> * The discounted price of "+bike3.brand+" "+ bike3.model+" is Rs."+" "+bike3.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
     }
     if(this.brand=="TVS")
     {
         document.getElementById("separator3x").innerHTML =`-------------------------------------------Discount Price------------------------------------------<br><br>` ; 
-        document.getElementById("discount3").innerHTML+=("* The discounted price of "+bike4.brand+" "+ bike4.model+" is Rs."+" "+bike4.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
+        document.getElementById("discount3").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike4.discount_price4+" -- <br> * The discounted price of "+bike4.brand+" "+ bike4.model+" is Rs."+" "+bike4.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
     }
 }
 
@@ -175,7 +183,6 @@ function Feedback()
     } 
     bike_model.prototype.add = function(bikename)
     {
-    
       this.bikemodel.push(bikename);
     }
     
