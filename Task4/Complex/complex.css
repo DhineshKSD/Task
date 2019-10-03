@@ -9,8 +9,15 @@ body
 }
 h1{
     position: relative;
-    left:40%;
-    padding-bottom: 40px;
+    left:42%;
+    top:30px;
+    padding-bottom: 10px;
+}
+.logo{
+    position: absolute;
+    width:180px;
+    height: 180px;
+    bottom: 470px;
 }
 h2{
     position: relative;
