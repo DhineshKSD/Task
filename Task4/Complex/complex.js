@@ -151,18 +151,18 @@ Bike_showroom.prototype.display_discountprice=function()
     if(this.brand=="Royal Enfield")
     {
         document.getElementById("separator1x").innerHTML =`-------------------------------------------Discount Price------------------------------------------<br><br>` ;    
-        document.getElementById("discount1").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike1.discount_price1+" -- <br> * The discounted price of "+bike1.brand+" "+ bike1.model+" is Rs."+" "+bike1.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
-        document.getElementById("discount1").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike2.discount_price2+" -- <br> * The discounted price of "+bike2.brand+" "+ bike2.model+" is Rs."+" "+bike2.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
+        document.getElementById("discount1").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike1.discount_price1+" -- <br> * The discounted price of "+bike1.brand+" - "+ bike1.model+" is Rs."+" "+bike1.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
+        document.getElementById("discount1").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike2.discount_price2+" -- <br> * The discounted price of "+bike2.brand+" - "+ bike2.model+" is Rs."+" "+bike2.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
     }
     if(this.brand=="Yamaha")
     {
         document.getElementById("separator2x").innerHTML =`-------------------------------------------Discount Price------------------------------------------<br><br>` ; 
-        document.getElementById("discount2").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike3.discount_price3+" -- <br> * The discounted price of "+bike3.brand+" "+ bike3.model+" is Rs."+" "+bike3.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
+        document.getElementById("discount2").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike3.discount_price3+" -- <br> * The discounted price of "+bike3.brand+" - "+ bike3.model+" is Rs."+" "+bike3.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
     }
     if(this.brand=="TVS")
     {
         document.getElementById("separator3x").innerHTML =`-------------------------------------------Discount Price------------------------------------------<br><br>` ; 
-        document.getElementById("discount3").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike4.discount_price4+" -- <br> * The discounted price of "+bike4.brand+" "+ bike4.model+" is Rs."+" "+bike4.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
+        document.getElementById("discount3").innerHTML+=("-- Avail discount of "+" "+" Rs. "+ bike4.discount_price4+" -- <br> * The discounted price of "+bike4.brand+" - "+ bike4.model+" is Rs."+" "+bike4.discounted_price+ "<br> (Exclusive of tax and insurance)<br><br>");
     }
 }
 
