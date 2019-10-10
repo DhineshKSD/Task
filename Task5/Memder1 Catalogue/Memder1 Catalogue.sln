@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memder1 Catalogue", "Memder1 Catalogue.csproj", "{2E095278-B292-4B20-B7A7-AF669AEC8FE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E40A5CB1-961F-483F-A6FC-EC1496BEF24B}"
+	ProjectSection(SolutionItems) = preProject
+		Laptop.cs = Laptop.cs
+		Mouse.cs = Mouse.cs
+		Pendrive.cs = Pendrive.cs
+		Read.cs = Read.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E095278-B292-4B20-B7A7-AF669AEC8FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E095278-B292-4B20-B7A7-AF669AEC8FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E095278-B292-4B20-B7A7-AF669AEC8FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E095278-B292-4B20-B7A7-AF669AEC8FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2F0DC6E-E687-461E-9309-CF0986CABB05}
+	EndGlobalSection
+EndGlobal
