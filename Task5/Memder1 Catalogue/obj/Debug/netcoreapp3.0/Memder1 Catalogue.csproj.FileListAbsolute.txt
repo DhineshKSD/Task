@@ -1,0 +1,11 @@
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\bin\Debug\netcoreapp3.0\Memder1 Catalogue.exe
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\bin\Debug\netcoreapp3.0\Memder1 Catalogue.deps.json
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\bin\Debug\netcoreapp3.0\Memder1 Catalogue.runtimeconfig.json
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\bin\Debug\netcoreapp3.0\Memder1 Catalogue.runtimeconfig.dev.json
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\bin\Debug\netcoreapp3.0\Memder1 Catalogue.dll
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\bin\Debug\netcoreapp3.0\Memder1 Catalogue.pdb
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\obj\Debug\netcoreapp3.0\Memder1 Catalogue.AssemblyInfoInputs.cache
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\obj\Debug\netcoreapp3.0\Memder1 Catalogue.AssemblyInfo.cs
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\obj\Debug\netcoreapp3.0\Memder1 Catalogue.dll
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\obj\Debug\netcoreapp3.0\Memder1 Catalogue.pdb
+C:\Users\dhinesh.ks\source\repos\Memder1 Catalogue\obj\Debug\netcoreapp3.0\Memder1 Catalogue.csprojAssemblyReference.cache
