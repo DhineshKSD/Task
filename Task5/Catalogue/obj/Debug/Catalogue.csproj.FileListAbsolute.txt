@@ -1,6 +1,0 @@
-C:\Users\dhinesh.ks\source\repos\Catalogue\bin\Debug\Catalogue.exe.config
-C:\Users\dhinesh.ks\source\repos\Catalogue\bin\Debug\Catalogue.exe
-C:\Users\dhinesh.ks\source\repos\Catalogue\bin\Debug\Catalogue.pdb
-C:\Users\dhinesh.ks\source\repos\Catalogue\obj\Debug\Catalogue.csprojAssemblyReference.cache
-C:\Users\dhinesh.ks\source\repos\Catalogue\obj\Debug\Catalogue.exe
-C:\Users\dhinesh.ks\source\repos\Catalogue\obj\Debug\Catalogue.pdb
