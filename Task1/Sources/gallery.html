@@ -1,62 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
         <head>
-                <title> Personal Website - Gallery </title>
-                <link href="../Stylesheets/gallery.css" rel="stylesheet" type="text/css">
-                <link href="../Stylesheets/navigation.css" rel="stylesheet" type="text/css">
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width,initial-scale=1.0">
-                <script
-                src="https://code.jquery.com/jquery-3.4.1.js"
-                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-                crossorigin="anonymous"></script>
+        <title> Personal Website - Gallery </title>
+        <link href="../Stylesheets/gallery.css" rel="stylesheet" type="text/css">
+        <link href="../Stylesheets/navigation.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
         </head>
 
         <body>               
-                <div class="nav">                 
-                        <label for="toggle">&#9776;</label>
-                        <a href="../Sources/tree.html"><img alt="Image-not found" class="logo" src="../Resources/f.png"></a>
-                        <input type="checkbox" id="toggle"/> 
-                                                                            
-                        <div class="menu">
-                                <a  href="../Sources/index.html" > Home </a>
-                                <a  href="../Sources/about.html"> About Me </a>  
-                                <a  href="../Sources/academics.html"> Academics </a>
-                                <a  href="../Sources/gallery.html"id="onlink"> Gallery </a>
-                                <a  href="../Sources/extracurricular.html"> Extra-curricular </a>
-                                <a  href="../Sources/achievements.html"> Achievements</a>
-                                <a  href="../Sources/contact.html"> Contact</a>       
-                        </div>              
-                </div>    
-        
-               <div class="image">
-                        <h1>Photos</h1>
-                <div id="slideshow">
-                        <div>
-                          <img alt="Image-not found" src="../Resources/8.jpg">
-                        </div>
-                        <div>
-                          <img alt="Image-not found" src="../Resources/9.jpg">
-                        </div>
-                        <div>
-                          <img alt="Image-not found" src="../Resources/10.jpg">
-                        </div>
-                        <div>
-                          <img alt="Image-not found" src="../Resources/5.jpg">
-                        </div>
-                     </div>
+        <div class="nav">                 
+                <label for="toggle">&#9776;</label>
+                <a href="../Sources/tree.html"><img alt="Image-not found" class="logo" src="../Resources/f.png"></a>
+                <input type="checkbox" id="toggle"/> 
+                                                                        
+                <div class="menu">
+                        <a  href="../Sources/index.html" > Home </a>
+                        <a  href="../Sources/about.html"> About Me </a>  
+                        <a  href="../Sources/academics.html"> Academics </a>
+                        <a  href="../Sources/gallery.html"id="onlink"> Gallery </a>
+                        <a  href="../Sources/extracurricular.html"> Extra-curricular </a>
+                        <a  href="../Sources/achievements.html"> Achievements</a>
+                        <a  href="../Sources/contact.html"> Contact</a>       
+                </div>              
+        </div>    
+
+        <div class="image">
+                <h1>Photos</h1>
+        <div id="slideshow">
+                <div>
+                        <img alt="Image-not found" src="../Resources/8.jpg">
                 </div>
-                <script>
-                $("#slideshow > div:gt(0)").hide();
-                setInterval(function() { 
-                $('#slideshow > div:first')
-                .fadeOut(1000)
-                .next()
-                .fadeIn(1000)
-                .end()
-                .appendTo('#slideshow');
-                },  1000);
-                </script>
-        </body>
-       
+                <div>
+                        <img alt="Image-not found" src="../Resources/9.jpg">
+                </div>
+                <div>
+                        <img alt="Image-not found" src="../Resources/10.jpg">
+                </div>
+                <div>
+                        <img alt="Image-not found" src="../Resources/5.jpg">
+                </div>
+                </div>
+        </div>
+        <script src="../jquery/slideshow.js"></script>
+        </body>       
 </html>
